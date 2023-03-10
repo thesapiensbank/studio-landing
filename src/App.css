@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body{
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.glowButtontext :hover{
+    text-shadow:
+    /* White glow */
+    /* 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff, */
+    /* Green glow */
+
+    0 0 42px #fff,
+    0 0 62px #fff;
+    font-weight: 400;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myControlclass{
+    background-color: #1E1E1E !important;
+    height: 4rem;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    display: flex;
+    align-items: center;
+    color: #8B8B8B !important;
+    padding: 1rem 1.5rem !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.myMenuClassName{
+    background-color: #2A2A2A!important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem 1.5rem !important;
+    color: #8B8B8B !important;;
 }
 
-.App-link {
-  color: #61dafb;
+.Dropdown-option{
+    color: #8B8B8B !important;
+    background-color: #2A2A2A !important;
+    padding: 8px 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myArrowClassName {
+    margin-top: 17px;
+    right: 20px !important;
+    cursor: pointer;
+}
+
+.about-bg{
+    background: url("assets/covers/about-bg.svg");
+    background-position: 100% 50%;
+}
+
+.home-bg{
+    background: url("assets/covers/mintflick.gif");
+    background-size: cover;
+    background-position: 100% 50% ;
+}
+
+.details-bg {
+    background: url("assets/covers/details.svg");
+    background-size: cover;
+}
+
+.vector_button{
+    background: url("assets/components/vector-button-bg.svg");
+    background-position: 100% 50%;
+}
+
+.vigenette {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient( transparent, transparent, #000);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+}
+
+.vigenette :hover{
+    opacity: 100;
+}
+
+@media screen and (max-width : 1024px) {
+    .about-bg{
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width : 768px) {
+.myControlclass{
+    padding: 0.5rem 1rem !important;
+    height: 3.5rem;
+}
 }
