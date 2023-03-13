@@ -32,7 +32,7 @@ const MobileNavbar = () => {
           ></img>
         </div>
         {showMenu && (
-          <div className="h-96 w-48 absolute md:top-10 top-12 md:-right-6 -right-5 z-20 bg-black flex flex-col justify-between duration-300 font-tertiary">
+          <div className="h-96 w-48 absolute md:top-10 top-12 md:-right-6 -right-5 z-20 bg-black flex flex-col justify-between duration-300 ">
             <ul className="flex flex-col  w-full space-y-5 text-white mt-5">
               <Link to="/portfolio">
                 <li className="hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer">
@@ -57,7 +57,7 @@ const MobileNavbar = () => {
             </ul>
             <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
               <img className="w-full h-auto " src={button} alt=""></img>
-              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-xl lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center font-primary">
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-xl lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center">
                 Book a Meeting
               </p>
             </div>
