@@ -22,12 +22,12 @@ const Home = () => {
       <div className="lg:w-4/5 w-full h-max bg-black lg:ml-auto 2xl:mb-5 lg:mb-4 mb-4">
         <div className="h-full w-full text-white aspect-video relative">
           <div className="2xl:h-[556px] lg:h-[536px] h-full w-full home-bg"></div>
-          <p className="absolute top-8 left-10 text-2xl uppercase">
+          <p className="absolute top-8 left-10 lg:text-3xl md:text-2xl uppercase font-head">
             Showreel 2022
           </p>
         </div>
         <div className="flex md:flex-row flex-col w-full md:space-x-5 space-y-5 md:space-y-0 text-white 2xl:-mt-16 2xl:mb-16 lg:mb-16 lg:mt-12 my-7 lg:text-md xl:text-base lg:px-11 md:px-6 px-5">
-          <p className="md:w-3/4 ">
+          <p className="md:w-3/4 font-secondary">
             We are a proud Design studio since 2022. Our team of talented
             artists has a passion for creating dynamic and engaging visuals that
             tell compelling stories and capture the imagination. We believe that
@@ -36,7 +36,7 @@ const Home = () => {
           </p>
           <div className="md:w-1/4 flex justify-center">
             <Link to="/portfolio">
-              <div className="border border-white py-2.5 px-10 w-max h-max rounded-lg hover:bg-primary cursor-pointer">
+              <div className="border border-white py-2.5 px-10 w-max h-max rounded-lg hover:bg-primary cursor-pointer font-primary">
                 {" "}
                 Checkout work
               </div>
@@ -52,7 +52,7 @@ const Home = () => {
                   className="object-cover h-full w-auto md:rounded-xl rounded-lg"
                   alt=""
                 ></img>
-                <p className="lg:text-2xl text-md uppercase text-white  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
+                <p className="lg:text-3xl text-xl font-head uppercase text-white z-10  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
                   Shiva Tapa
                 </p>
                 <div className="vigenette group-hover:opacity-100"></div>
@@ -66,7 +66,7 @@ const Home = () => {
                   className="object-cover h-full w-auto md:rounded-xl rounded-lg"
                   alt=""
                 ></img>
-                <p className="lg:text-2xl text-md uppercase text-white  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
+                <p className="lg:text-3xl text-xl font-head uppercase text-white z-10  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
                   Gaumi
                 </p>
                 <div className="vigenette group-hover:opacity-100"></div>
@@ -77,7 +77,7 @@ const Home = () => {
                   className="object-cover h-full w-auto md:rounded-xl rounded-lg"
                   alt=""
                 ></img>
-                <p className="lg:text-2xl text-md uppercase text-white  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
+                <p className="lg:text-3xl text-xl font-head uppercase text-white z-10  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
                   battleship
                 </p>
                 <div className="vigenette group-hover:opacity-100"></div>
@@ -94,7 +94,7 @@ const Home = () => {
                   className="object-cover h-full w-full md:rounded-xl rounded-lg"
                   alt=""
                 ></img>
-                <p className="lg:text-2xl text-md uppercase text-white  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
+                <p className="lg:text-3xl text-xl font-head uppercase text-white z-10 absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
                   War
                 </p>
                 <div className="vigenette group-hover:opacity-100"></div>
@@ -105,7 +105,7 @@ const Home = () => {
                   className="object-cover h-full w-full md:rounded-xl rounded-lg"
                   alt=""
                 ></img>
-                <p className="lg:text-2xl text-md uppercase text-white  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
+                <p className="lg:text-3xl text-xl font-head uppercase text-white z-10  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
                   war
                 </p>
                 <div className="vigenette group-hover:opacity-100"></div>
@@ -117,7 +117,7 @@ const Home = () => {
                 className="object-cover h-full w-full md:rounded-xl rounded-lg"
                 alt=""
               ></img>
-              <p className="lg:text-2xl text-md uppercase text-white  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
+              <p className="lg:text-3xl text-xl font-head uppercase text-white z-10  absolute lg:top-7 lg:left-7 top-2 left-3 opacity-0 group-hover:opacity-100">
                 Yogi
               </p>
               <div className="vigenette group-hover:opacity-100"></div>

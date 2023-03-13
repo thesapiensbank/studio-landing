@@ -15,7 +15,7 @@ const About = () => {
       <div className="lg:w-4/5 h-screen bg-black lg:ml-auto text-white about-bg relative">
         <div className="h-full w-full backdrop-blur-sm backdrop-brightness-50 delay-200 flex flex-col md:justify-center justify-start pt-10 md:pt-0 items-center">
           <div className="lg:w-1/2 md:w-2/3 w-11/12 h-max flex flex-col space-y-3 animate-wiggle">
-            <p className="md:text-xl text-sm">
+            <p className="md:text-xl text-sm font-tertiary">
               Our team of talented artists has a passion for creating dynamic
               and engaging visuals that tell compelling stories and capture the
               imagination. We believe that heroes come in all shapes and sizes,

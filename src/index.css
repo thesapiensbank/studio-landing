@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-Regular.woff");
+    font-weight: regular;
+  }
+  @font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-Medium.woff");
+    font-weight: medium;
+  }
+  @font-face {
+    font-family: "Gilroy-ExtraLight";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-UltraLight.woff");
+    font-weight: light;
+  }
+  @font-face {
+    font-family: "Gilroy-Light";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-Light.woff");
+    font-weight: light;
+  }
+  
+  @font-face {
+    font-family: "Gilroy-Medium";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-Medium.woff");
+    font-weight: heavy;
+  }
+  @font-face {
+    font-family: "Gilroy-ExtraBold";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-ExtraBold.woff");
+    font-weight: extraBold;
+  }
+  @font-face {
+    font-family: "Gilroy-Bold";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-Bold.woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Gilroy-Black";
+    src: url("./assets/fonts/Gilroy-Font/Gilroy-Black.woff");
+    font-weight: black;
+  }
+
+  @font-face {
+    font-family: "Din-Condensed";
+    src: url("./assets/fonts/Din-Condensed/DINCondensed-Bold.ttf");
+  }
+
+  .font-head{
+    font-family: "Din-Condensed";
+  }
+  
+  .font-secondary{
+    font-family: "Gilroy-ExtraLight";
+  }
+
+  .font-primary{
+    font-family: "Gilroy";
+  }
+
+  .font-tertiary{
+    font-family: "Gilroy-Light";
+  }

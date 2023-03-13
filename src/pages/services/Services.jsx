@@ -20,12 +20,12 @@ const Services = () => {
       <div className="block lg:hidden">
         <MobileNavbar />
       </div>
-      <div className="lg:w-4/5 h-screen bg-black lg:ml-auto text-white relative">
+      <div className="lg:w-4/5 h-screen bg-black lg:ml-auto text-white relative font-primary">
         <img className="" src={servicesbg} alt=""></img>
         <div className="flex flex-col 2xl:w-1/2 lg:w-7/12 md:w-2/3 w-11/12 h-max absolute md:top-28 top-10 left-1/2 -translate-x-1/2 space-y-4">
           <div className="flex flex-col space-y-3 ">
-            <p className="text-3xl uppercase">services</p>
-            <p className="font-thin md:text-base text-xs">
+            <p className="text-4xl uppercase font-head">services</p>
+            <p className="font-thin md:text-base text-xs font-secondary">
               We offer a wide variety of Services with high quality outputs.{" "}
               <br />
               You can chose what you want and also get an estimate for your

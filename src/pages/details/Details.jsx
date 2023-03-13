@@ -17,13 +17,13 @@ const Details = () => {
       <div className="block lg:hidden">
         <MobileNavbar />
       </div>
-      <div className="lg:w-4/5 h-max bg-black lg:ml-auto 2xl:mb-5 lg:mb-4 px-5 text-white">
+      <div className="lg:w-4/5 h-max bg-black lg:ml-auto 2xl:mb-5 lg:mb-4 px-5 text-white font-primary">
         <div className="h-full w-full  aspect-video relative ">
           <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-full w-full details-bg md:rounded-xl rounded-lg"></div>
         </div>
         <div className="w-full flex flex-col md:space-y-10 space-y-4 md:my-10 my-4">
           <p className="md:text-5xl text-4xl font-semibold">Adiyogi</p>
-          <p className="md:w-3/4 w-full md:text-base text-sm">
+          <p className="md:w-3/4 w-full md:text-base text-sm font-tertiary">
             We are a proud Design studio since 2022. Our team of talented
             artists has a passion for creating dynamic and engaging visuals that
             tell compelling stories and capture the imagination. We believe that
@@ -87,7 +87,7 @@ const Details = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col lg:space-y-5 md:space-y-3 space-y-1 md:my-10 my-4">
+        <div className="w-full flex flex-col lg:space-y-5 md:space-y-3 space-y-1 md:my-10 my-4 font-tertiary">
           <p className="md:text-3xl text-2xl font-semibold mb-2 md:mb-0">
             Credits
           </p>

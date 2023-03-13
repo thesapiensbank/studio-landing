@@ -19,7 +19,7 @@ const Portfolio = () => {
       <div className="block lg:hidden">
         <MobileNavbar />
       </div>
-      <div className="lg:w-4/5 h-max bg-black lg:ml-auto text-white py-4">
+      <div className="lg:w-4/5 h-max bg-black lg:ml-auto text-white py-4 font-primary">
         <div className="flex flex-col justify-center w-full">
           <Tab.Group>
             <Tab.List className="flex justify-center md:space-x-2 space-x-1">
