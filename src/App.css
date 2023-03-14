@@ -78,6 +78,10 @@ body{
     opacity: 100;
 }
 
+.hidescroll::-webkit-scrollbar{
+    display: none;
+}
+
 @media screen and (max-width : 1024px) {
     .about-bg{
         background-position: 50% 50%;
