@@ -57,8 +57,88 @@ body{
     background-size: cover;
 }
 
+.illustrations-tab-bg {
+    background: url("assets/portfolio/illustrations/IMG_0774.JPG");
+    background-size: cover;
+}
+
+.character-tab-bg {
+    background: url("assets/portfolio/character-design/IMG_6082.JPG");
+    background-size: cover;
+}
+
+.concept-tab-bg {
+    background: url("assets/portfolio/concept-art/IMG_5944.JPG");
+    background-size: cover;
+}
+
+.visual-tab-bg {
+    background: url("assets/portfolio/visual-development/IMG_0751.JPG");
+    background-size: cover;
+}
+
+.fantasy-tab-bg {
+    background: url("assets/portfolio/fantasy-art/IMG_5952.JPG");
+    background-size: cover;
+}
+
+.book-tab-bg {
+    background: url("assets/portfolio/book-illustrations/IMG_9741.JPG");
+    background-size: cover;
+}
+
+.cover-tab-bg {
+    background: url("assets/portfolio/cover-art/4.jpg");
+    background-size: cover;
+}
+
+.children-tab-bg {
+    background: url("assets/portfolio/children-art/IMG_0760.JPG");
+    background-size: cover;
+}
+
+.environment-tab-bg {
+    background: url("assets/portfolio/environmental-design/IMG_5397.JPG");
+    background-size: cover;
+}
+
+.game-tab-bg {
+    background: url("assets/portfolio/game-art/IMG_0748.JPG");
+    background-size: cover;
+}
+
+.graphics-tab-bg {
+    background: url("assets/portfolio/graphic-design/IMG_3772.JPG");
+    background-size: cover;
+}
+
+.storyboard-tab-bg {
+    background: url("assets/portfolio/book-illustrations/IMG_9741.JPG");
+    background-size: cover;
+}
+
+.unreal-tab-bg {
+    background: url("assets/portfolio/children-art/IMG_0760.JPG");
+    background-size: cover;
+}
+
+.animation-tab-bg {
+    background: url("assets/portfolio/visual-development/IMG_0751.JPG");
+    background-size: cover;
+}
+
+.voiceover-tab-bg {
+    background: url("assets/portfolio/illustrations/IMG_0774.JPG");
+    background-size: cover;
+}
+
+.ui-tab-bg {
+    background: url("assets/portfolio/character-design/IMG_6082.JPG");
+    background-size: cover;
+}
+
 .vector_button{
-    background: url("assets/components/vector-button-bg.svg");
+    background: url("assets/portfolio/cover-art/4.jpg");
     background-position: 100% 50%;
 }
 
