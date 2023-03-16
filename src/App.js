@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Details from "./pages/details/Details";
+import Introduction from "./components/introduction/Introduction";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/services" element={<Services />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/test" element={<Introduction />}></Route>
           <Route
             exact
             path="/details/:collection"

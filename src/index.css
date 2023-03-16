@@ -49,6 +49,11 @@
     src: url("./assets/fonts/Din-Condensed/DINCondensed-Bold.ttf");
   }
 
+  @font-face {
+    font-family: "Baby-monsta";
+    src: url("./assets/fonts/Baby-monsta/Baby\ Monsta.otf");
+  }
+
   .font-head{
     font-family: "Din-Condensed";
   }
@@ -63,4 +68,8 @@
 
   .font-tertiary{
     font-family: "Gilroy-Light";
+  }
+
+  .font-intro{
+    font-family: "Baby-monsta";
   }

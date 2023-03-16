@@ -44,6 +44,7 @@ body{
 .about-bg{
     background: url("assets/covers/about-bg.svg");
     background-position: 100% 50%;
+    background-attachment: fixed;
 }
 
 .home-bg{
@@ -161,6 +162,125 @@ body{
 .hidescroll::-webkit-scrollbar{
     display: none;
 }
+
+.one{
+    animation: one 1s ease-in;
+}
+
+.two{
+    animation: two 1s ease-in;
+    animation-delay: 1s;
+}
+
+.three{
+    animation: three 3s ease-in;
+    animation-delay: 1s;
+}
+
+.four{
+    animation: four 2s ease-in;
+    animation-delay: 2s;
+    
+}
+
+.five{
+    transform: scale(10,10);
+    margin-left: -5rem;
+    margin-top: -7.5rem;
+    animation: five 3s ease-in;
+    animation-delay: 4s;
+}
+
+.animate-bg{
+    animation: bg 10s ease-in;
+}
+
+@keyframes one {
+    0%,
+    50% {
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes two {
+    0%,
+    50% {
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes three {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+}
+
+@keyframes four {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(-30%);
+      opacity: 1;
+    }
+}
+
+@keyframes bg {
+    0%,
+    50% {
+        background-color: #E7881A;
+      opacity: 1;
+    }
+     
+    60%{
+        background-color: black;
+      opacity: 1;
+    }
+    100% {
+        background-color: black;
+      opacity: 0;
+    }
+}
+
+@keyframes five {
+    0%{
+        transform: scale(10,10);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(5,5);
+        opacity: 1;
+        
+    }     
+    100% {
+        transform: scale(1,1);
+        opacity: 0;
+    }
+}
+
 
 @media screen and (max-width : 1024px) {
     .about-bg{
