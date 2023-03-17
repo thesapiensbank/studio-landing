@@ -187,7 +187,7 @@ body{
     transform: scale(10,10);
     margin-left: -5rem;
     margin-top: -7.5rem;
-    animation: five 2.5s ease-in;
+    animation: five 3s ease-in;
     animation-delay: 4s;
 }
 
@@ -271,6 +271,10 @@ body{
         opacity: 1;
     }   
     50%{
+        opacity: 1;
+    }
+    70%{
+        transform: scale(1,1);
         opacity: 1;
     }
     100% {
