@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../../assets/brand-logo/nav-logo.svg";
 import button from "../../assets/components/button.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import behance from "../../assets/icons/behance.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -37,6 +39,14 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
+          <div className="flex w-full justify-center space-x-4">
+            <a href="/">
+              <img className="h-12 w-auto" src={instagram} alt=""></img>
+            </a>
+            <a href="/">
+              <img className="h-12 w-auto" src={behance} alt=""></img>
+            </a>
+          </div>
         </div>
         <div className="absolute bottom-0 w-full">
           <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">

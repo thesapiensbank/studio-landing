@@ -54,6 +54,11 @@
     src: url("./assets/fonts/Baby-monsta/Baby\ Monsta.otf");
   }
 
+  @font-face {
+    font-family: "Futura-bold";
+    src: url("./assets/fonts/Futura/Futura\ Bold/Futura-Bold.otf");
+  }
+
   .font-head{
     font-family: "Din-Condensed";
   }
@@ -72,4 +77,8 @@
 
   .font-intro{
     font-family: "Baby-monsta";
+  }
+
+  .font-intro2{
+    font-family: "Futura-bold";
   }
