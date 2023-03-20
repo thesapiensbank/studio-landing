@@ -110,7 +110,7 @@ const Details = () => {
                   Director : <span className="underline">Afroz Khan</span>
                 </p>
                 <p>
-                  Director's Assistant :{" "}
+                  Director&apos;s Assistant :{" "}
                   <span className="underline">Kalyani Kulkarni</span>
                 </p>
                 <p>
@@ -126,7 +126,7 @@ const Details = () => {
                   Director : <span className="underline">Afroz Khan</span>
                 </p>
                 <p>
-                  Director's Assistant :{" "}
+                  Director&apos;s Assistant :{" "}
                   <span className="underline">Kalyani Kulkarni</span>
                 </p>
                 <p>

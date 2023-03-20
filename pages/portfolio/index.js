@@ -181,7 +181,7 @@ const Portfolio = () => {
                               : "children-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Children's art
+                          Children&apos;s art
                         </button>
                       )}
                     </Tab>

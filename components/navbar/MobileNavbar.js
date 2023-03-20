@@ -60,12 +60,12 @@ const MobileNavbar = () => {
                 </Link>
               </ul>
               <div className="flex w-full justify-center space-x-2 mt-2">
-                <a href="/">
+                <Link href="/">
                   <Image className="h-10 w-auto" src={instagram} alt="" />
-                </a>
-                <a href="/">
+                </Link>
+                <Link href="/">
                   <Image className="h-10 w-auto" src={behance} alt="" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
