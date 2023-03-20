@@ -1,107 +1,385 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: "Gilroy";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-Regular.woff");
+    font-weight: regular;
+  }
+  @font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-Medium.woff");
+    font-weight: medium;
+  }
+  @font-face {
+    font-family: "Gilroy-ExtraLight";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-UltraLight.woff");
+    font-weight: light;
+  }
+  @font-face {
+    font-family: "Gilroy-Light";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-Light.woff");
+    font-weight: light;
+  }
+  
+  @font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-Medium.woff");
+    font-weight: heavy;
+  }
+  @font-face {
+    font-family: "Gilroy-ExtraBold";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-ExtraBold.woff");
+    font-weight: extraBold;
+  }
+  @font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-Bold.woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Gilroy-Black";
+    src: url("../public/assets/fonts/Gilroy-Font/Gilroy-Black.woff");
+    font-weight: black;
+  }
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  @font-face {
+    font-family: "Din-Condensed";
+    src: url("../public/assets/fonts/Din-Condensed/DINCondensed-Bold.ttf");
+  }
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+  @font-face {
+    font-family: "Baby-monsta";
+    src: url("../public/assets/fonts/Baby-monsta/Baby\ Monsta.otf");
+  }
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  @font-face {
+    font-family: "Futura-bold";
+    src: url("../public/assets/fonts/Futura/Futura\ Bold/Futura-Bold.otf");
+  }
+
+  .font-head{
+    font-family: "Din-Condensed";
+  }
+  
+  .font-secondary{
+    font-family: "Gilroy-ExtraLight";
+  }
+
+  .font-primary{
+    font-family: "Gilroy";
+  }
+
+  .font-tertiary{
+    font-family: "Gilroy-Light";
+  }
+
+  .font-intro{
+    font-family: "Baby-monsta";
+  }
+
+  .font-intro2{
+    font-family: "Futura-bold";
+  }
+
+  .body{
+  background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.glowButtontext :hover{
+  text-shadow:
+  0 0 42px #fff,
+  0 0 62px #fff;
+  font-weight: 400;
+  color: white;
+}
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+.myControlclass{
+  background-color: #1E1E1E !important;
+  height: 4rem;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  display: flex;
+  align-items: center;
+  color: #8B8B8B !important;
+  padding: 1rem 1.5rem !important;
+}
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+.myMenuClassName{
+  background-color: #2A2A2A!important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 1rem 1.5rem !important;
+  color: #8B8B8B !important;;
+}
 
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+.Dropdown-option{
+  color: #8B8B8B !important;
+  background-color: #2A2A2A !important;
+  padding: 8px 0 !important;
+}
+
+.myArrowClassName {
+  margin-top: 17px;
+  right: 20px !important;
+  cursor: pointer;
+}
+
+.about-bg{
+  background: url("../public/assets/covers/about-bg.svg");
+  background-position: 100% 50%;
+  background-attachment: fixed;
+}
+
+.home-bg{
+  background: url("../public/assets/covers/mintflick.gif");
+  background-size: cover;
+  background-position: 100% 50% ;
+}
+
+.details-bg {
+  background: url("../public/assets/covers/details.svg");
+  background-size: cover;
+}
+
+.illustrations-tab-bg {
+  background: url("../public/assets/portfolio/illustrations/IMG_0774.JPG");
+  background-size: cover;
+}
+
+.character-tab-bg {
+  background: url("../public/assets/portfolio/character-design/IMG_6082.JPG");
+  background-size: cover;
+}
+
+.concept-tab-bg {
+  background: url("../public/assets/portfolio/concept-art/IMG_5944.JPG");
+  background-size: cover;
+}
+
+.visual-tab-bg {
+  background: url("../public/assets/portfolio/visual-development/IMG_0751.JPG");
+  background-size: cover;
+}
+
+.fantasy-tab-bg {
+  background: url("../public/assets/portfolio/fantasy-art/IMG_5952.JPG");
+  background-size: cover;
+}
+
+.book-tab-bg {
+  background: url("../public/assets/portfolio/book-illustrations/IMG_9741.JPG");
+  background-size: cover;
+}
+
+.cover-tab-bg {
+  background: url("../public/assets/portfolio/cover-art/4.jpg");
+  background-size: cover;
+}
+
+.children-tab-bg {
+  background: url("../public/assets/portfolio/children-art/IMG_0760.JPG");
+  background-size: cover;
+}
+
+.environment-tab-bg {
+  background: url("../public/assets/portfolio/environmental-design/IMG_5397.JPG");
+  background-size: cover;
+}
+
+.game-tab-bg {
+  background: url("../public/assets/portfolio/game-art/IMG_0748.JPG");
+  background-size: cover;
+}
+
+.graphics-tab-bg {
+  background: url("../public/assets/portfolio/graphic-design/IMG_3772.JPG");
+  background-size: cover;
+}
+
+.storyboard-tab-bg {
+  background: url("../public/assets/portfolio/book-illustrations/IMG_9741.JPG");
+  background-size: cover;
+}
+
+.unreal-tab-bg {
+  background: url("../public/assets/portfolio/children-art/IMG_0760.JPG");
+  background-size: cover;
+}
+
+.animation-tab-bg {
+  background: url("../public/assets/portfolio/visual-development/IMG_0751.JPG");
+  background-size: cover;
+}
+
+.voiceover-tab-bg {
+  background: url("../public/assets/portfolio/illustrations/IMG_0774.JPG");
+  background-size: cover;
+}
+
+.ui-tab-bg {
+  background: url("../public/assets/portfolio/character-design/IMG_6082.JPG");
+  background-size: cover;
+}
+
+.vector_button{
+  background: url("../public/assets/portfolio/cover-art/4.jpg");
+  background-position: 100% 50%;
+}
+
+.vigenette {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient( transparent, transparent, #000);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+}
+
+.vigenette :hover{
+  opacity: 100;
+}
+
+.hidescroll::-webkit-scrollbar{
+  display: none;
+}
+
+.one{
+  animation: one 1s ease-in;
+}
+
+.two{
+  animation: two 1s ease-in;
+  animation-delay: 1s;
+}
+
+.three{
+  animation: three 3s ease-in;
+  animation-delay: 1s;
+}
+
+.four{
+  animation: four 2s ease-in;
+  animation-delay: 2s;
+  
+}
+
+.five{
+  transform: scale(10,10);
+  margin-left: -5rem;
+  margin-top: -7.5rem;
+  animation: five 3s ease-in;
+  animation-delay: 4s;
+}
+
+.animate-bg{
+  animation: bg 10s ease-in;
+}
+
+@keyframes one {
+  0%,
+  50% {
+    opacity: 0;
+  }
+   
+  60%,
+  100% {
+    opacity: 1;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@keyframes two {
+  0%,
+  50% {
+    opacity: 0;
   }
+   
+  60%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes three {
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+   
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  
+  }
+}
+
+@keyframes four {
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+   
+  60%,
+  100% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+}
+
+@keyframes bg {
+  0%,
+  50% {
+      background-color: #E7881A;
+    opacity: 1;
+  }
+   
+  60%{
+      background-color: black;
+    opacity: 1;
+  }
+  100% {
+      background-color: black;
+    opacity: 0;
+  }
+}
+
+@keyframes five {
+  0%{
+      transform: scale(10,10);
+      opacity: 1;
+  }   
+  50%{
+      opacity: 1;
+  }
+  70%{
+      transform: scale(1,1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1,1);
+      opacity: 0;
+  }
+}
+
+
+@media screen and (max-width : 1024px) {
+  .about-bg{
+      background-position: 50% 50%;
+      background-size: cover;
+  }
+}
+
+@media screen and (max-width : 768px) {
+.myControlclass{
+  padding: 0.5rem 1rem !important;
+  height: 3.5rem;
+}
+
 }
