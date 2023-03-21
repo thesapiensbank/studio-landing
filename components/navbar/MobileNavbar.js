@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import logo from "../../public/assets/brand-logo/nav-logo.svg";
-import menu from "../../public/assets/icons/menu.svg";
-import x from "../../public/assets/icons/x.svg";
+import logo from "/assets/brand-logo/nav-logo.svg";
+import menu from "/assets/icons/menu.svg";
+import x from "/assets/icons/x.svg";
 import Link from "next/link";
-import button from "../../public/assets/components/button.svg";
-import instagram from "../../public/assets/icons/instagram.svg";
-import behance from "../../public/assets/icons/behance.svg";
+import button from "/assets/components/button.svg";
+import instagram from "/assets/icons/instagram.svg";
+import behance from "/assets/icons/behance.svg";
 import Image from "next/image";
 
 const MobileNavbar = () => {

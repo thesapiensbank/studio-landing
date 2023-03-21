@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import servicesbg from "../../public/assets/components/services-bg.svg";
+import servicesbg from "/assets/components/services-bg.svg";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import MobileNavbar from "../../components/navbar/MobileNavbar";

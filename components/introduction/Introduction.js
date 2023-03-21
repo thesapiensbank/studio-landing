@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../../public/assets/brand-logo/intro-logo.svg";
+import logo from "/assets/brand-logo/intro-logo.svg";
 
 const Introduction = () => {
   return (

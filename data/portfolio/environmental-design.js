@@ -1,14 +1,14 @@
-import environment1 from "../../public/assets/portfolio/environmental-design/IMG_5400.jpg";
-import environment2 from "../../public/assets/portfolio/environmental-design/IMG_5945.jpg";
-import environment3 from "../../public/assets/portfolio/environmental-design/IMG_5946.jpg";
-import environment4 from "../../public/assets/portfolio/environmental-design/IMG_5404.jpg";
-import environment5 from "../../public/assets/portfolio/environmental-design/IMG_5954.jpg";
-import environment6 from "../../public/assets/portfolio/environmental-design/IMG_5955.jpg";
-import environment7 from "../../public/assets/portfolio/environmental-design/IMG_5953.jpg";
-import environment8 from "../../public/assets/portfolio/environmental-design/IMG_5412.png";
-import environment9 from "../../public/assets/portfolio/environmental-design/IMG_5397.jpg";
-import environment10 from "../../public/assets/portfolio/environmental-design/IMG_5375.jpg";
-import environment11 from "../../public/assets/portfolio/environmental-design/IMG_5953.jpg";
+import environment1 from "/assets/portfolio/environmental-design/IMG_5400.jpg";
+import environment2 from "/assets/portfolio/environmental-design/IMG_5945.jpg";
+import environment3 from "/assets/portfolio/environmental-design/IMG_5946.jpg";
+import environment4 from "/assets/portfolio/environmental-design/IMG_5404.jpg";
+import environment5 from "/assets/portfolio/environmental-design/IMG_5954.jpg";
+import environment6 from "/assets/portfolio/environmental-design/IMG_5955.jpg";
+import environment7 from "/assets/portfolio/environmental-design/IMG_5953.jpg";
+import environment8 from "/assets/portfolio/environmental-design/IMG_5412.png";
+import environment9 from "/assets/portfolio/environmental-design/IMG_5397.jpg";
+import environment10 from "/assets/portfolio/environmental-design/IMG_5375.jpg";
+import environment11 from "/assets/portfolio/environmental-design/IMG_5953.jpg";
 
 export const environmentalDesign = {
   image1: environment1,
