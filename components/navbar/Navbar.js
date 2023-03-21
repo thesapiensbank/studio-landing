@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "/assets/brand-logo/nav-logo.svg";
+import logo from "../../public/assets/brand-logo/nav-logo.svg";
 import Image from "next/image";
-import button from "/assets/components/button.svg";
-import instagram from "/assets/icons/instagram.svg";
-import behance from "/assets/icons/behance.svg";
+import button from "../../public/assets/components/button.svg";
+import instagram from "../../public/assets/icons/instagram.svg";
+import behance from "../../public/assets/icons/behance.svg";
 import Link from "next/link";
 
 const Navbar = () => {
