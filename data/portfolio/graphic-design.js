@@ -1,17 +1,17 @@
-import graphic1 from "../../public/assets/portfolio/graphic-design/IMG_3721.jpg";
-import graphic2 from "../../public/assets/portfolio/graphic-design/IMG_3726.jpg";
-import graphic3 from "../../public/assets/portfolio/graphic-design/IMG_3772.jpg";
-import graphic4 from "../../public/assets/portfolio/graphic-design/IMG_3723.jpg";
-import graphic5 from "../../public/assets/portfolio/graphic-design/IMG_3805.jpg";
-import graphic6 from "../../public/assets/portfolio/graphic-design/IMG_5226.jpg";
-import graphic7 from "../../public/assets/portfolio/graphic-design/IMG_5220.jpg";
-import graphic8 from "../../public/assets/portfolio/graphic-design/IMG_5222.jpg";
-import graphic9 from "../../public/assets/portfolio/graphic-design/IMG_5223.jpg";
-import graphic10 from "../../public/assets/portfolio/graphic-design/IMG_5225.jpg";
-import graphic11 from "../../public/assets/portfolio/graphic-design/IMG_5227.jpg";
-import graphic12 from "../../public/assets/portfolio/graphic-design/IMG_5229.jpg";
-import graphic13 from "../../public/assets/portfolio/graphic-design/IMG_5326.jpg";
-import graphic14 from "../../public/assets/portfolio/graphic-design/IMG_5931.jpg";
+import graphic1 from "../../public/assets/portfolio/graphic-design/IMG_3721.JPG";
+import graphic2 from "../../public/assets/portfolio/graphic-design/IMG_3726.JPG";
+import graphic3 from "../../public/assets/portfolio/graphic-design/IMG_3772.JPG";
+import graphic4 from "../../public/assets/portfolio/graphic-design/IMG_3723.JPG";
+import graphic5 from "../../public/assets/portfolio/graphic-design/IMG_3805.JPG";
+import graphic6 from "../../public/assets/portfolio/graphic-design/IMG_5226.JPG";
+import graphic7 from "../../public/assets/portfolio/graphic-design/IMG_5220.JPG";
+import graphic8 from "../../public/assets/portfolio/graphic-design/IMG_5222.JPG";
+import graphic9 from "../../public/assets/portfolio/graphic-design/IMG_5223.JPG";
+import graphic10 from "../../public/assets/portfolio/graphic-design/IMG_5225.JPG";
+import graphic11 from "../../public/assets/portfolio/graphic-design/IMG_5227.JPG";
+import graphic12 from "../../public/assets/portfolio/graphic-design/IMG_5229.JPG";
+import graphic13 from "../../public/assets/portfolio/graphic-design/IMG_5326.JPG";
+import graphic14 from "../../public/assets/portfolio/graphic-design/IMG_5931.JPG";
 
 export const graphicDesign = {
   image1: graphic1,
