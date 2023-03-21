@@ -1,8 +1,8 @@
-import cover1 from "/assets/portfolio/cover-art/IMG_5321.jpg";
-import cover2 from "/assets/portfolio/cover-art/IMG_5322.jpg";
-import cover3 from "/assets/portfolio/cover-art/4.jpg";
-import cover4 from "/assets/portfolio/cover-art/IMG_5339.png";
-import cover5 from "/assets/portfolio/cover-art/IMG_7354.jpg";
+import cover1 from "../../public/assets/portfolio/cover-art/IMG_5321.jpg";
+import cover2 from "../../public/assets/portfolio/cover-art/IMG_5322.jpg";
+import cover3 from "../../public/assets/portfolio/cover-art/4.jpg";
+import cover4 from "../../public/assets/portfolio/cover-art/IMG_5339.png";
+import cover5 from "../../public/assets/portfolio/cover-art/IMG_7354.jpg";
 
 export const coverArt = {
   image1: cover1,

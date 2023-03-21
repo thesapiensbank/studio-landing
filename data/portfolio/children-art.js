@@ -1,11 +1,11 @@
-import children1 from "/assets/portfolio/children-art/IMG_5254.jpg";
-import children2 from "/assets/portfolio/children-art/IMG_5258.jpg";
-import children3 from "/assets/portfolio/children-art/IMG_5317.jpg";
-import children4 from "/assets/portfolio/children-art/IMG_9893.jpg";
-import children5 from "/assets/portfolio/children-art/IMG_9894.jpg";
-import children6 from "/assets/portfolio/children-art/IMG_5314.jpg";
-import children7 from "/assets/portfolio/children-art/IMG_0673.jpg";
-import children8 from "/assets/portfolio/children-art/IMG_0760.jpg";
+import children1 from "../../public/assets/portfolio/children-art/IMG_5254.jpg";
+import children2 from "../../public/assets/portfolio/children-art/IMG_5258.jpg";
+import children3 from "../../public/assets/portfolio/children-art/IMG_5317.jpg";
+import children4 from "../../public/assets/portfolio/children-art/IMG_9893.jpg";
+import children5 from "../../public/assets/portfolio/children-art/IMG_9894.jpg";
+import children6 from "../../public/assets/portfolio/children-art/IMG_5314.jpg";
+import children7 from "../../public/assets/portfolio/children-art/IMG_0673.jpg";
+import children8 from "../../public/assets/portfolio/children-art/IMG_0760.jpg";
 
 export const childrenArt = {
   image1: children1,
