@@ -1,14 +1,14 @@
-import environment1 from "../../public/assets/portfolio/environmental-design/IMG_5400.JPG";
-import environment2 from "../../public/assets/portfolio/environmental-design/IMG_5945.JPG";
-import environment3 from "../../public/assets/portfolio/environmental-design/IMG_5946.JPG";
-import environment4 from "../../public/assets/portfolio/environmental-design/IMG_5404.JPG";
-import environment5 from "../../public/assets/portfolio/environmental-design/IMG_5954.JPG";
-import environment6 from "../../public/assets/portfolio/environmental-design/IMG_5955.JPG";
-import environment7 from "../../public/assets/portfolio/environmental-design/IMG_5953.JPG";
-import environment8 from "../../public/assets/portfolio/environmental-design/IMG_5412.PNG";
-import environment9 from "../../public/assets/portfolio/environmental-design/IMG_5397.JPG";
-import environment10 from "../../public/assets/portfolio/environmental-design/IMG_5375.JPG";
-import environment11 from "../../public/assets/portfolio/environmental-design/IMG_5953.JPG";
+import environment1 from "../../public/assets/portfolio/environmental-design/IMG_5400.jpg";
+import environment2 from "../../public/assets/portfolio/environmental-design/IMG_5945.jpg";
+import environment3 from "../../public/assets/portfolio/environmental-design/IMG_5946.jpg";
+import environment4 from "../../public/assets/portfolio/environmental-design/IMG_5404.jpg";
+import environment5 from "../../public/assets/portfolio/environmental-design/IMG_5954.jpg";
+import environment6 from "../../public/assets/portfolio/environmental-design/IMG_5955.jpg";
+import environment7 from "../../public/assets/portfolio/environmental-design/IMG_5953.jpg";
+import environment8 from "../../public/assets/portfolio/environmental-design/IMG_5412.png";
+import environment9 from "../../public/assets/portfolio/environmental-design/IMG_5397.jpg";
+import environment10 from "../../public/assets/portfolio/environmental-design/IMG_5375.jpg";
+import environment11 from "../../public/assets/portfolio/environmental-design/IMG_5953.jpg";
 
 export const environmentalDesign = {
   image1: environment1,
