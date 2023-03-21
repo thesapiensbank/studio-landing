@@ -1,18 +1,18 @@
-import game1 from "../../public/assets/portfolio/game-art/IMG_5935.JPG";
-import game2 from "../../public/assets/portfolio/game-art/IMG_0742.JPG";
-import game3 from "../../public/assets/portfolio/game-art/IMG_0745.JPG";
-import game4 from "../../public/assets/portfolio/game-art/IMG_5939.JPG";
-import game5 from "../../public/assets/portfolio/game-art/IMG_0748.JPG";
-import game6 from "../../public/assets/portfolio/game-art/IMG_0750.JPG";
-import game7 from "../../public/assets/portfolio/game-art/IMG_5936.JPG";
-import game8 from "../../public/assets/portfolio/game-art/IMG_0751.JPG";
-import game9 from "../../public/assets/portfolio/game-art/IMG_0763.JPG";
-import game10 from "../../public/assets/portfolio/game-art/IMG_0764.JPG";
-import game11 from "../../public/assets/portfolio/game-art/IMG_5937.JPG";
-import game12 from "../../public/assets/portfolio/game-art/IMG_5938.JPG";
-import game13 from "../../public/assets/portfolio/game-art/IMG_5948.JPG";
-import game14 from "../../public/assets/portfolio/game-art/IMG_6115.JPG";
-import game15 from "../../public/assets/portfolio/game-art/IMG_5952.JPG";
+import game1 from "../../public/assets/portfolio/game-art/IMG_5935.jpg";
+import game2 from "../../public/assets/portfolio/game-art/IMG_0742.jpg";
+import game3 from "../../public/assets/portfolio/game-art/IMG_0745.jpg";
+import game4 from "../../public/assets/portfolio/game-art/IMG_5939.jpg";
+import game5 from "../../public/assets/portfolio/game-art/IMG_0748.jpg";
+import game6 from "../../public/assets/portfolio/game-art/IMG_0750.jpg";
+import game7 from "../../public/assets/portfolio/game-art/IMG_5936.jpg";
+import game8 from "../../public/assets/portfolio/game-art/IMG_0751.jpg";
+import game9 from "../../public/assets/portfolio/game-art/IMG_0763.jpg";
+import game10 from "../../public/assets/portfolio/game-art/IMG_0764.jpg";
+import game11 from "../../public/assets/portfolio/game-art/IMG_5937.jpg";
+import game12 from "../../public/assets/portfolio/game-art/IMG_5938.jpg";
+import game13 from "../../public/assets/portfolio/game-art/IMG_5948.jpg";
+import game14 from "../../public/assets/portfolio/game-art/IMG_6115.jpg";
+import game15 from "../../public/assets/portfolio/game-art/IMG_5952.jpg";
 
 export const gameArt = {
   image1: game1,
