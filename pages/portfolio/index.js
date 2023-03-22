@@ -44,7 +44,7 @@ import character14 from "../../public/assets/portfolio/characterdesign/IMG_5804.
 import character15 from "../../public/assets/portfolio/characterdesign/IMG_5805.jpg";
 import character16 from "../../public/assets/portfolio/characterdesign/IMG_5810.png";
 import character17 from "../../public/assets/portfolio/characterdesign/IMG_5811.png";
-import character18 from "../../public/assets/portfolio/characterdesign/IMG_0763.png";
+import character18 from "../../public/assets/portfolio/characterdesign/IMG_0763.jpg";
 import children1 from "../../public/assets/portfolio/childrenart/IMG_5254.jpg";
 import children2 from "../../public/assets/portfolio/childrenart/IMG_5258.jpg";
 import children3 from "../../public/assets/portfolio/childrenart/IMG_5317.jpg";
