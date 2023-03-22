@@ -34,7 +34,7 @@ import character4 from "../../public/assets/portfolio/characterdesign/IMG_5939.j
 import character5 from "../../public/assets/portfolio/characterdesign/IMG_5597.jpg";
 import character6 from "../../public/assets/portfolio/characterdesign/IMG_5598.jpg";
 import character7 from "../../public/assets/portfolio/characterdesign/IMG_5591.jpg";
-import character8 from "../../public/assets/portfolio/characterdesign/IMG_5937.jpg";
+import character8 from "../../public/assets/portfolio/characterdesign/IMG_5806.jpg";
 import character9 from "../../public/assets/portfolio/characterdesign/IMG_5938.jpg";
 import character10 from "../../public/assets/portfolio/characterdesign/IMG_6652.jpg";
 import character11 from "../../public/assets/portfolio/characterdesign/IMG_6665.jpg";
@@ -44,7 +44,7 @@ import character14 from "../../public/assets/portfolio/characterdesign/IMG_5804.
 import character15 from "../../public/assets/portfolio/characterdesign/IMG_5805.jpg";
 import character16 from "../../public/assets/portfolio/characterdesign/IMG_5810.png";
 import character17 from "../../public/assets/portfolio/characterdesign/IMG_5811.png";
-import character18 from "../../public/assets/portfolio/characterdesign/IMG_5812.png";
+import character18 from "../../public/assets/portfolio/characterdesign/IMG_0763.png";
 import children1 from "../../public/assets/portfolio/childrenart/IMG_5254.jpg";
 import children2 from "../../public/assets/portfolio/childrenart/IMG_5258.jpg";
 import children3 from "../../public/assets/portfolio/childrenart/IMG_5317.jpg";
@@ -150,7 +150,7 @@ import storyboard2 from "../../public/assets/portfolio/storyboards/IMG_5353.jpg"
 import storyboard3 from "../../public/assets/portfolio/storyboards/IMG_5354.jpg";
 import storyboard4 from "../../public/assets/portfolio/storyboards/IMG_5355.jpg";
 import storyboard5 from "../../public/assets/portfolio/storyboards/IMG_5356.jpg";
-import storyboard6 from "../../public/assets/portfolio/storyboards/IMG_5357.jpg";
+import storyboard6 from "../../public/assets/portfolio/storyboards/IMG_5356.jpg";
 import visual1 from "../../public/assets/portfolio/visualdevelopment/IMG_5241.jpg";
 import visual2 from "../../public/assets/portfolio/visualdevelopment/IMG_5693.jpg";
 import visual3 from "../../public/assets/portfolio/visualdevelopment/IMG_9201.jpg";
@@ -163,12 +163,12 @@ import visual9 from "../../public/assets/portfolio/visualdevelopment/IMG_0749.jp
 import visual10 from "../../public/assets/portfolio/visualdevelopment/IMG_0750.jpg";
 import visual11 from "../../public/assets/portfolio/visualdevelopment/IMG_0751.jpg";
 import visual12 from "../../public/assets/portfolio/visualdevelopment/IMG_3519.jpg";
-import visual13 from "../../public/assets/portfolio/visualdevelopment/IMG_9893.jpg";
+import visual13 from "../../public/assets/portfolio/visualdevelopment/IMG_5244.jpg";
 import visual14 from "../../public/assets/portfolio/visualdevelopment/IMG_5247.jpg";
 import visual15 from "../../public/assets/portfolio/visualdevelopment/IMG_5249.jpg";
 import visual16 from "../../public/assets/portfolio/visualdevelopment/IMG_0746.jpg";
 import visual17 from "../../public/assets/portfolio/visualdevelopment/IMG_0747.jpg";
-import visual18 from "../../public/assets/portfolio/visualdevelopment/IMG_9894.jpg";
+import visual18 from "../../public/assets/portfolio/visualdevelopment/IMG_9892.jpg";
 
 const bookIllustrations = {
   image1: billustration1,
