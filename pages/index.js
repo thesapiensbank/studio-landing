@@ -83,6 +83,7 @@ const Home = () => {
                 <div className="lg:h-[576px] h-full w-1/2 md:rounded-xl rounded-lg flex justify-center relative group cursor-pointer">
                   <Link href="/details">
                     <Image
+                      priority
                       src={shivatapa}
                       className="object-cover h-full w-auto md:rounded-xl rounded-lg"
                       alt=""
@@ -97,6 +98,7 @@ const Home = () => {
                 <div className="flex flex-col lg:h-[576px] h-full w-1/2 md:rounded-xl rounded-lg lg:space-y-4 md:space-y-2 space-y-1">
                   <div className="h-1/2 w-full md:rounded-xl rounded-lg relative group cursor-pointer ">
                     <Image
+                      priority
                       src={gaumi}
                       className="object-cover h-full w-auto md:rounded-xl rounded-lg"
                       alt=""
@@ -108,6 +110,7 @@ const Home = () => {
                   </div>
                   <div className="h-1/2 w-full md:rounded-xl rounded-lg relative group cursor-pointer">
                     <Image
+                      priority
                       src={battleship}
                       className="object-cover h-full w-auto md:rounded-xl rounded-lg"
                       alt=""
@@ -125,6 +128,7 @@ const Home = () => {
                 <div className="flex flex-col lg:h-[552px] h-full w-1/2 md:rounded-xl rounded-lg lg:space-y-4 md:space-y-2 space-y-1">
                   <div className="h-1/2 w-full md:rounded-xl rounded-lg relative group cursor-pointer">
                     <Image
+                      priority
                       src={persianwar}
                       className="object-cover h-full w-full md:rounded-xl rounded-lg"
                       alt=""
@@ -136,6 +140,7 @@ const Home = () => {
                   </div>
                   <div className="h-1/2 w-full md:rounded-xl rounded-lg relative group cursor-pointer">
                     <Image
+                      priority
                       src={marathawar}
                       className="object-cover h-full w-full md:rounded-xl rounded-lg"
                       alt=""
@@ -148,6 +153,7 @@ const Home = () => {
                 </div>
                 <div className="2xl:h-full lg:h-[552px] h-full  w-1/2 md:rounded-xl rounded-lg flex justify-center relative group cursor-pointer">
                   <Image
+                    priority
                     src={yogi}
                     className="object-cover h-full w-full md:rounded-xl rounded-lg"
                     alt=""
