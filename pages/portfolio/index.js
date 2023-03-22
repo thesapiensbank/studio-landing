@@ -4,42 +4,318 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import MobileNavbar from "../../components/navbar/MobileNavbar";
 import Grid from "../../components/portfolio-grid/Grid";
-import { illustrations } from "../../data/portfolio/illustrations";
-import { conceptArt } from "../../data/portfolio/concept-art";
-import { visualDevelopment } from "../../data/portfolio/visual-development";
-import { fantasyArt } from "../../data/portfolio/fantasy-art";
-import { coverArt } from "../../data/portfolio/cover-art";
-import { childrenArt } from "../../data/portfolio/children-art";
-import { environmentalDesign } from "../../data/portfolio/environmental-design";
-import { gameArt } from "../../data/portfolio/game-art";
-import { graphicDesign } from "../../data/portfolio/graphic-design";
-import { storyboard } from "../../data/portfolio/storyboard";
-import { characterDesign } from "../../data/portfolio/character-design";
 import {
   IconCircleChevronLeft,
   IconCircleChevronRight,
 } from "@tabler/icons-react";
 import Head from "next/head";
-import illustration1 from "../../public/assets/portfolio/book-illustrations/IMG_5315.jpg";
-import illustration2 from "../../public/assets/portfolio/book-illustrations/IMG_5207.jpg";
-import illustration3 from "../../public/assets/portfolio/book-illustrations/IMG_5208.jpg";
-import illustration4 from "../../public/assets/portfolio/book-illustrations/IMG_5314.jpg";
-import illustration5 from "../../public/assets/portfolio/book-illustrations/IMG_5210.jpg";
-import illustration6 from "../../public/assets/portfolio/book-illustrations/IMG_5214.jpg";
-import illustration7 from "../../public/assets/portfolio/book-illustrations/IMG_5316.jpg";
-import illustration8 from "../../public/assets/portfolio/book-illustrations/IMG_5350.jpg";
-import illustration9 from "../../public/assets/portfolio/book-illustrations/IMG_5358.jpg";
-import illustration10 from "../../public/assets/portfolio/book-illustrations/IMG_9740.jpg";
-import illustration11 from "../../public/assets/portfolio/book-illustrations/IMG_9741.jpg";
-import illustration12 from "../../public/assets/portfolio/book-illustrations/IMG_5317.jpg";
-import illustration13 from "../../public/assets/portfolio/book-illustrations/IMG_5375.jpg";
-import illustration14 from "../../public/assets/portfolio/book-illustrations/IMG_9734.jpg";
-import illustration15 from "../../public/assets/portfolio/book-illustrations/IMG_9735.jpg";
-import illustration16 from "../../public/assets/portfolio/book-illustrations/IMG_9736.jpg";
-import illustration17 from "../../public/assets/portfolio/book-illustrations/IMG_9737.jpg";
-import illustration18 from "../../public/assets/portfolio/book-illustrations/IMG_5306.jpg";
+import billustration1 from "../../public/assets/portfolio/book-illustrations/IMG_5315.jpg";
+import billustration2 from "../../public/assets/portfolio/book-illustrations/IMG_5207.jpg";
+import billustration3 from "../../public/assets/portfolio/book-illustrations/IMG_5208.jpg";
+import billustration4 from "../../public/assets/portfolio/book-illustrations/IMG_5314.jpg";
+import billustration5 from "../../public/assets/portfolio/book-illustrations/IMG_5210.jpg";
+import billustration6 from "../../public/assets/portfolio/book-illustrations/IMG_5214.jpg";
+import billustration7 from "../../public/assets/portfolio/book-illustrations/IMG_5316.jpg";
+import billustration8 from "../../public/assets/portfolio/book-illustrations/IMG_5350.jpg";
+import billustration9 from "../../public/assets/portfolio/book-illustrations/IMG_5358.jpg";
+import billustration10 from "../../public/assets/portfolio/book-illustrations/IMG_9740.jpg";
+import billustration11 from "../../public/assets/portfolio/book-illustrations/IMG_9741.jpg";
+import billustration12 from "../../public/assets/portfolio/book-illustrations/IMG_5317.jpg";
+import billustration13 from "../../public/assets/portfolio/book-illustrations/IMG_5375.jpg";
+import billustration14 from "../../public/assets/portfolio/book-illustrations/IMG_9734.jpg";
+import billustration15 from "../../public/assets/portfolio/book-illustrations/IMG_9735.jpg";
+import billustration16 from "../../public/assets/portfolio/book-illustrations/IMG_9736.jpg";
+import billustration17 from "../../public/assets/portfolio/book-illustrations/IMG_9737.jpg";
+import billustration18 from "../../public/assets/portfolio/book-illustrations/IMG_5306.jpg";
+import character1 from "../../public/assets/portfolio/character-design/IMG_5806.jpg";
+import character2 from "../../public/assets/portfolio/character-design/IMG_0763.jpg";
+import character3 from "../../public/assets/portfolio/character-design/IMG_6082.jpg";
+import character4 from "../../public/assets/portfolio/character-design/IMG_5939.jpg";
+import character5 from "../../public/assets/portfolio/character-design/IMG_5597.jpg";
+import character6 from "../../public/assets/portfolio/character-design/IMG_5598.jpg";
+import character7 from "../../public/assets/portfolio/character-design/IMG_5591.jpg";
+import character8 from "../../public/assets/portfolio/character-design/IMG_5937.jpg";
+import character9 from "../../public/assets/portfolio/character-design/IMG_5938.jpg";
+import character10 from "../../public/assets/portfolio/character-design/IMG_6652.jpg";
+import character11 from "../../public/assets/portfolio/character-design/IMG_6665.jpg";
+import character12 from "../../public/assets/portfolio/character-design/IMG_8298.jpg";
+import character13 from "../../public/assets/portfolio/character-design/IMG_5803.jpg";
+import character14 from "../../public/assets/portfolio/character-design/IMG_5804.jpg";
+import character15 from "../../public/assets/portfolio/character-design/IMG_5805.jpg";
+import character16 from "../../public/assets/portfolio/character-design/IMG_5810.png";
+import character17 from "../../public/assets/portfolio/character-design/IMG_5811.png";
+import character18 from "../../public/assets/portfolio/character-design/IMG_5812.png";
+import children1 from "../../public/assets/portfolio/children-art/IMG_5254.jpg";
+import children2 from "../../public/assets/portfolio/children-art/IMG_5258.jpg";
+import children3 from "../../public/assets/portfolio/children-art/IMG_5317.jpg";
+import children4 from "../../public/assets/portfolio/children-art/IMG_9893.jpg";
+import children5 from "../../public/assets/portfolio/children-art/IMG_9894.jpg";
+import children6 from "../../public/assets/portfolio/children-art/IMG_5314.jpg";
+import children7 from "../../public/assets/portfolio/children-art/IMG_0673.jpg";
+import children8 from "../../public/assets/portfolio/children-art/IMG_0760.jpg";
+import concept1 from "../../public/assets/portfolio/concept-art/IMG_0794.jpg";
+import concept2 from "../../public/assets/portfolio/concept-art/IMG_5940.jpg";
+import concept3 from "../../public/assets/portfolio/concept-art/IMG_5942.jpg";
+import concept4 from "../../public/assets/portfolio/concept-art/IMG_5943.jpg";
+import concept5 from "../../public/assets/portfolio/concept-art/IMG_5944.jpg";
+import concept6 from "../../public/assets/portfolio/concept-art/IMG_5941.jpg";
+import concept7 from "../../public/assets/portfolio/concept-art/IMG_5948.jpg";
+import concept8 from "../../public/assets/portfolio/concept-art/IMG_5945.jpg";
+import concept9 from "../../public/assets/portfolio/concept-art/IMG_5946.jpg";
+import concept10 from "../../public/assets/portfolio/concept-art/IMG_5947.jpg";
+import concept11 from "../../public/assets/portfolio/concept-art/IMG_5949.jpg";
+import concept12 from "../../public/assets/portfolio/concept-art/IMG_5950.jpg";
+import concept13 from "../../public/assets/portfolio/concept-art/IMG_5952.jpg";
+import concept14 from "../../public/assets/portfolio/concept-art/IMG_5951.jpg";
+import concept15 from "../../public/assets/portfolio/concept-art/IMG_5954.jpg";
+import concept16 from "../../public/assets/portfolio/concept-art/IMG_5942.jpg";
+import concept17 from "../../public/assets/portfolio/concept-art/IMG_5955.jpg";
+import concept18 from "../../public/assets/portfolio/concept-art/IMG_5953.jpg";
+import cover1 from "../../public/assets/portfolio/cover-art/IMG_5321.jpg";
+import cover2 from "../../public/assets/portfolio/cover-art/IMG_5322.jpg";
+import cover3 from "../../public/assets/portfolio/cover-art/4.jpg";
+import cover4 from "../../public/assets/portfolio/cover-art/IMG_5339.png";
+import cover5 from "../../public/assets/portfolio/cover-art/IMG_7354.jpg";
+import environment1 from "../../public/assets/portfolio/environmental-design/IMG_5400.jpg";
+import environment2 from "../../public/assets/portfolio/environmental-design/IMG_5945.jpg";
+import environment3 from "../../public/assets/portfolio/environmental-design/IMG_5946.jpg";
+import environment4 from "../../public/assets/portfolio/environmental-design/IMG_5404.jpg";
+import environment5 from "../../public/assets/portfolio/environmental-design/IMG_5954.jpg";
+import environment6 from "../../public/assets/portfolio/environmental-design/IMG_5955.jpg";
+import environment7 from "../../public/assets/portfolio/environmental-design/IMG_5953.jpg";
+import environment8 from "../../public/assets/portfolio/environmental-design/IMG_5412.png";
+import environment9 from "../../public/assets/portfolio/environmental-design/IMG_5397.jpg";
+import environment10 from "../../public/assets/portfolio/environmental-design/IMG_5375.jpg";
+import environment11 from "../../public/assets/portfolio/environmental-design/IMG_5953.jpg";
+import fantasy1 from "../../public/assets/portfolio/fantasy-art/IMG_5984.png";
+import fantasy2 from "../../public/assets/portfolio/fantasy-art/IMG_0772.jpg";
+import fantasy3 from "../../public/assets/portfolio/fantasy-art/IMG_0774.jpg";
+import fantasy4 from "../../public/assets/portfolio/fantasy-art/IMG_5985.png";
+import fantasy5 from "../../public/assets/portfolio/fantasy-art/IMG_9889.jpg";
+import fantasy6 from "../../public/assets/portfolio/fantasy-art/IMG_5940.jpg";
+import fantasy7 from "../../public/assets/portfolio/fantasy-art/IMG_5988.png";
+import fantasy8 from "../../public/assets/portfolio/fantasy-art/IMG_5948.jpg";
+import fantasy9 from "../../public/assets/portfolio/fantasy-art/IMG_5952.jpg";
+import fantasy10 from "../../public/assets/portfolio/fantasy-art/IMG_5986.png";
+import fantasy11 from "../../public/assets/portfolio/fantasy-art/IMG_5987.png";
+import game1 from "../../public/assets/portfolio/game-art/IMG_5935.jpg";
+import game2 from "../../public/assets/portfolio/game-art/IMG_0742.jpg";
+import game3 from "../../public/assets/portfolio/game-art/IMG_0745.jpg";
+import game4 from "../../public/assets/portfolio/game-art/IMG_5939.jpg";
+import game5 from "../../public/assets/portfolio/game-art/IMG_0748.jpg";
+import game6 from "../../public/assets/portfolio/game-art/IMG_0750.jpg";
+import game7 from "../../public/assets/portfolio/game-art/IMG_5936.jpg";
+import game8 from "../../public/assets/portfolio/game-art/IMG_0751.jpg";
+import game9 from "../../public/assets/portfolio/game-art/IMG_0763.jpg";
+import game10 from "../../public/assets/portfolio/game-art/IMG_0764.jpg";
+import game11 from "../../public/assets/portfolio/game-art/IMG_5937.jpg";
+import game12 from "../../public/assets/portfolio/game-art/IMG_5938.jpg";
+import game13 from "../../public/assets/portfolio/game-art/IMG_5948.jpg";
+import game14 from "../../public/assets/portfolio/game-art/IMG_6115.jpg";
+import game15 from "../../public/assets/portfolio/game-art/IMG_5952.jpg";
+import graphic1 from "../../public/assets/portfolio/graphic-design/IMG_3721.jpg";
+import graphic2 from "../../public/assets/portfolio/graphic-design/IMG_3726.jpg";
+import graphic3 from "../../public/assets/portfolio/graphic-design/IMG_3772.jpg";
+import graphic4 from "../../public/assets/portfolio/graphic-design/IMG_3723.jpg";
+import graphic5 from "../../public/assets/portfolio/graphic-design/IMG_3805.jpg";
+import graphic6 from "../../public/assets/portfolio/graphic-design/IMG_5226.jpg";
+import graphic7 from "../../public/assets/portfolio/graphic-design/IMG_5220.jpg";
+import graphic8 from "../../public/assets/portfolio/graphic-design/IMG_5222.jpg";
+import graphic9 from "../../public/assets/portfolio/graphic-design/IMG_5223.jpg";
+import graphic10 from "../../public/assets/portfolio/graphic-design/IMG_5225.jpg";
+import graphic11 from "../../public/assets/portfolio/graphic-design/IMG_5227.jpg";
+import graphic12 from "../../public/assets/portfolio/graphic-design/IMG_5229.jpg";
+import graphic13 from "../../public/assets/portfolio/graphic-design/IMG_5326.jpg";
+import graphic14 from "../../public/assets/portfolio/graphic-design/IMG_5931.jpg";
+import illustration1 from "../../public/assets/portfolio/illustrations/IMG_0765.jpg";
+import illustration2 from "../../public/assets/portfolio/illustrations/IMG_0757.jpg";
+import illustration3 from "../../public/assets/portfolio/illustrations/IMG_0758.jpg";
+import illustration4 from "../../public/assets/portfolio/illustrations/IMG_0791.jpg";
+import illustration5 from "../../public/assets/portfolio/illustrations/IMG_0759.jpg";
+import illustration6 from "../../public/assets/portfolio/illustrations/IMG_0770.jpg";
+import illustration7 from "../../public/assets/portfolio/illustrations/IMG_5818.jpg";
+import illustration8 from "../../public/assets/portfolio/illustrations/IMG_0771.jpg";
+import illustration9 from "../../public/assets/portfolio/illustrations/IMG_0772.jpg";
+import illustration10 from "../../public/assets/portfolio/illustrations/IMG_5829.jpg";
+import illustration11 from "../../public/assets/portfolio/illustrations/IMG_5830.jpg";
+import illustration12 from "../../public/assets/portfolio/illustrations/IMG_5603.jpg";
+import illustration13 from "../../public/assets/portfolio/illustrations/IMG_0767.jpg";
+import illustration14 from "../../public/assets/portfolio/illustrations/IMG_5827.jpg";
+import illustration15 from "../../public/assets/portfolio/illustrations/IMG_0773.jpg";
+import illustration16 from "../../public/assets/portfolio/illustrations/IMG_5447.png";
+import illustration17 from "../../public/assets/portfolio/illustrations/IMG_0774.jpg";
+import illustration18 from "../../public/assets/portfolio/illustrations/IMG_0769.jpg";
+import storyboard1 from "../../public/assets/portfolio/storyboard/IMG_5352.jpg";
+import storyboard2 from "../../public/assets/portfolio/storyboard/IMG_5353.jpg";
+import storyboard3 from "../../public/assets/portfolio/storyboard/IMG_5354.jpg";
+import storyboard4 from "../../public/assets/portfolio/storyboard/IMG_5355.jpg";
+import storyboard5 from "../../public/assets/portfolio/storyboard/IMG_5356.jpg";
+import storyboard6 from "../../public/assets/portfolio/storyboard/IMG_5357.jpg";
+import visual1 from "../../public/assets/portfolio/visual-development/IMG_5241.jpg";
+import visual2 from "../../public/assets/portfolio/visual-development/IMG_5693.jpg";
+import visual3 from "../../public/assets/portfolio/visual-development/IMG_9201.jpg";
+import visual4 from "../../public/assets/portfolio/visual-development/IMG_9890.jpg";
+import visual5 from "../../public/assets/portfolio/visual-development/IMG_0241.jpg";
+import visual6 from "../../public/assets/portfolio/visual-development/IMG_0240.jpg";
+import visual7 from "../../public/assets/portfolio/visual-development/IMG_5377.jpg";
+import visual8 from "../../public/assets/portfolio/visual-development/IMG_9889.jpg";
+import visual9 from "../../public/assets/portfolio/visual-development/IMG_0749.jpg";
+import visual10 from "../../public/assets/portfolio/visual-development/IMG_0750.jpg";
+import visual11 from "../../public/assets/portfolio/visual-development/IMG_0751.jpg";
+import visual12 from "../../public/assets/portfolio/visual-development/IMG_3519.jpg";
+import visual13 from "../../public/assets/portfolio/visual-development/IMG_9893.jpg";
+import visual14 from "../../public/assets/portfolio/visual-development/IMG_5247.jpg";
+import visual15 from "../../public/assets/portfolio/visual-development/IMG_5249.jpg";
+import visual16 from "../../public/assets/portfolio/visual-development/IMG_0746.jpg";
+import visual17 from "../../public/assets/portfolio/visual-development/IMG_0747.jpg";
+import visual18 from "../../public/assets/portfolio/visual-development/IMG_9894.jpg";
 
 const bookIllustrations = {
+  image1: billustration1,
+  image2: billustration2,
+  image3: billustration3,
+  image4: billustration4,
+  image5: billustration5,
+  image6: billustration6,
+  image7: billustration7,
+  image8: billustration8,
+  image9: billustration9,
+  image10: billustration10,
+  image11: billustration11,
+  image12: billustration12,
+  image13: billustration13,
+  image14: billustration14,
+  image15: billustration15,
+  image16: billustration16,
+  image17: billustration17,
+  image18: billustration18,
+};
+
+const characterDesign = {
+  image1: character1,
+  image2: character2,
+  image3: character3,
+  image4: character4,
+  image5: character5,
+  image6: character6,
+  image7: character7,
+  image8: character8,
+  image9: character9,
+  image10: character10,
+  image11: character11,
+  image12: character12,
+  image13: character13,
+  image14: character14,
+  image15: character15,
+  image16: character16,
+  image17: character17,
+  image18: character18,
+};
+
+const childrenArt = {
+  image1: children1,
+  image2: children2,
+  image3: children3,
+  image4: children4,
+  image5: children5,
+  image6: children6,
+  image7: children7,
+  image8: children8,
+};
+
+const conceptArt = {
+  image1: concept1,
+  image2: concept2,
+  image3: concept3,
+  image4: concept4,
+  image5: concept5,
+  image6: concept6,
+  image7: concept7,
+  image8: concept8,
+  image9: concept9,
+  image10: concept10,
+  image11: concept11,
+  image12: concept12,
+  image13: concept13,
+  image14: concept14,
+  image15: concept15,
+  image16: concept16,
+  image17: concept17,
+  image18: concept18,
+};
+
+const coverArt = {
+  image1: cover1,
+  image2: cover2,
+  image3: cover3,
+  image4: cover4,
+  image5: cover5,
+};
+
+const environmentalDesign = {
+  image1: environment1,
+  image2: environment2,
+  image3: environment3,
+  image4: environment4,
+  image5: environment5,
+  image6: environment6,
+  image7: environment7,
+  image8: environment8,
+  image9: environment9,
+  image10: environment10,
+  image11: environment11,
+};
+
+const fantasyArt = {
+  image1: fantasy1,
+  image2: fantasy2,
+  image3: fantasy3,
+  image4: fantasy4,
+  image5: fantasy5,
+  image6: fantasy6,
+  image7: fantasy7,
+  image8: fantasy8,
+  image9: fantasy9,
+  image10: fantasy10,
+  image11: fantasy11,
+};
+
+const gameArt = {
+  image1: game1,
+  image2: game2,
+  image3: game3,
+  image4: game4,
+  image5: game5,
+  image6: game6,
+  image7: game7,
+  image8: game8,
+  image9: game9,
+  image10: game10,
+  image11: game11,
+  image12: game12,
+  image13: game13,
+  image14: game14,
+  image15: game15,
+};
+
+const graphicDesign = {
+  image1: graphic1,
+  image2: graphic2,
+  image3: graphic3,
+  image4: graphic4,
+  image5: graphic5,
+  image6: graphic6,
+  image7: graphic7,
+  image8: graphic8,
+  image9: graphic9,
+  image10: graphic10,
+  image11: graphic11,
+  image12: graphic12,
+  image13: graphic13,
+  image14: graphic14,
+};
+
+const illustrations = {
   image1: illustration1,
   image2: illustration2,
   image3: illustration3,
@@ -58,6 +334,36 @@ const bookIllustrations = {
   image16: illustration16,
   image17: illustration17,
   image18: illustration18,
+};
+
+const storyboard = {
+  image1: storyboard1,
+  image2: storyboard2,
+  image3: storyboard3,
+  image4: storyboard4,
+  image5: storyboard5,
+  image6: storyboard6,
+};
+
+const visualDevelopment = {
+  image1: visual1,
+  image2: visual2,
+  image3: visual3,
+  image4: visual4,
+  image5: visual5,
+  image6: visual6,
+  image7: visual7,
+  image8: visual8,
+  image9: visual9,
+  image10: visual10,
+  image11: visual11,
+  image12: visual12,
+  image13: visual13,
+  image14: visual14,
+  image15: visual15,
+  image16: visual16,
+  image17: visual17,
+  image18: visual18,
 };
 
 const Portfolio = () => {
