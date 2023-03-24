@@ -4,8 +4,7 @@ import menu from "../../public/assets/icons/menu.svg";
 import x from "../../public/assets/icons/x.svg";
 import Link from "next/link";
 import button from "../../public/assets/components/button.svg";
-import instagram from "../../public/assets/icons/instagram.svg";
-import behance from "../../public/assets/icons/behance.svg";
+import { IconBrandInstagram, IconBrandBehance } from "@tabler/icons-react";
 import Image from "next/image";
 
 const MobileNavbar = () => {
@@ -61,10 +60,16 @@ const MobileNavbar = () => {
               </ul>
               <div className="flex w-full justify-center space-x-2 mt-2">
                 <Link href="/">
-                  <Image className="h-10 w-auto" src={instagram} alt="" />
+                  <IconBrandInstagram
+                    size={42}
+                    className=" bg-[#7A7A78] hover:bg-primary p-1.5 rounded-full"
+                  />
                 </Link>
                 <Link href="/">
-                  <Image className="h-10 w-auto" src={behance} alt="" />
+                  <IconBrandBehance
+                    size={42}
+                    className=" bg-[#7A7A78] hover:bg-primary p-2 rounded-full"
+                  />
                 </Link>
               </div>
             </div>

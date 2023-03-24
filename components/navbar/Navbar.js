@@ -2,9 +2,8 @@ import React from "react";
 import logo from "../../public/assets/brand-logo/nav-logo.svg";
 import Image from "next/image";
 import button from "../../public/assets/components/button.svg";
-import instagram from "../../public/assets/icons/instagram.svg";
-import behance from "../../public/assets/icons/behance.svg";
 import Link from "next/link";
+import { IconBrandInstagram, IconBrandBehance } from "@tabler/icons-react";
 
 const Navbar = () => {
   return (
@@ -42,10 +41,16 @@ const Navbar = () => {
           </ul>
           <div className="flex w-full justify-center space-x-4">
             <Link href="/">
-              <Image className="h-12 w-auto" src={instagram} alt="" />
+              <IconBrandInstagram
+                size={46}
+                className=" bg-[#7A7A78] hover:bg-primary p-1.5 rounded-full"
+              />
             </Link>
             <Link href="/">
-              <Image className="h-12 w-auto" src={behance} alt="" />
+              <IconBrandBehance
+                size={46}
+                className=" bg-[#7A7A78] hover:bg-primary p-2 rounded-full"
+              />
             </Link>
           </div>
         </div>
