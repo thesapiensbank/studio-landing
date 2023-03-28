@@ -59,7 +59,10 @@ const MobileNavbar = () => {
                 </Link>
               </ul>
               <div className="flex w-full justify-center space-x-2 mt-2">
-                <Link href="/">
+                <Link
+                  href="https://www.instagram.com/supersapiens_studio/"
+                  target="_blank"
+                >
                   <IconBrandInstagram
                     size={42}
                     className=" bg-[#7A7A78] hover:bg-primary p-1.5 rounded-full"
@@ -73,12 +76,17 @@ const MobileNavbar = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
-              <Image className="w-full h-auto " src={button} alt="" />
-              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-xl lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center">
-                Book a Meeting
-              </p>
-            </div>
+            <Link
+              href="https://calendly.com/studio-supersapiens/30min"
+              target="_blank"
+            >
+              <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
+                <Image className="w-full h-auto " src={button} alt="" />
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-xl lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center">
+                  Book a Meeting
+                </p>
+              </div>
+            </Link>
           </div>
         )}
       </div>

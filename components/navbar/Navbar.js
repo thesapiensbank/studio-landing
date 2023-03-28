@@ -40,7 +40,10 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="flex w-full justify-center space-x-4">
-            <Link href="/">
+            <Link
+              href="https://www.instagram.com/supersapiens_studio/"
+              target="_blank"
+            >
               <IconBrandInstagram
                 size={46}
                 className=" bg-[#7A7A78] hover:bg-primary p-1.5 rounded-full"
@@ -54,14 +57,19 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute bottom-0 w-full">
-          <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
-            <Image className="w-full h-auto " src={button} alt="" />
-            <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-lg lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center font-primary">
-              Book a Meeting
-            </p>
+        <Link
+          href="https://calendly.com/studio-supersapiens/30min"
+          target="_blank"
+        >
+          <div className="absolute bottom-0 w-full">
+            <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
+              <Image className="w-full h-auto " src={button} alt="" />
+              <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-lg lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center font-primary">
+                Book a Meeting
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

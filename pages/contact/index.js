@@ -33,24 +33,20 @@ const Contact = () => {
             <div className="flex -space-x-6">
               <Image src={mail} alt="" className="z-10" />
               <div className="relative bg-[#1e1e1e] w-full  lg:h-28 h-24 flex flex-col justify-center p-5 md:px-10 px-8 rounded-lg  font-thin underline md:text-base text-sm">
-                <p>Taher@postofficestudios.com</p>
-                <p>takemymoney@postofficestudios.com</p>
+                <p>studio.supersapiens@gmail.com</p>
               </div>
             </div>
             <div className="flex -space-x-6">
               <Image src={contact} alt="" className="z-10" />
               <div className="relative bg-[#1e1e1e] w-full  lg:h-28 h-24 flex flex-col justify-center p-5 md:px-10 px-8 rounded-lg  font-thin md:text-base text-sm">
-                <p>+91 9876543210</p>
-                <p>022 25869746</p>
+                <p>+91 93225 37772</p>
+                <p>+91 8626016446</p>
               </div>
             </div>
             <div className="flex -space-x-6">
               <Image src={website} alt="" className="z-10" />
               <div className="relative bg-[#1e1e1e] w-full  lg:h-28 h-24 flex flex-col justify-center p-5 md:px-10 px-8 rounded-lg  font-thin md:text-base text-sm ">
-                <p>
-                  11th Floor, Discovery of India Building, Nehru Centre, Dr
-                  Annie Besant Rd, Worli, Mumbai, Maharashtra 400018
-                </p>
+                <p>C1-1102, Siyona Pethkar, Punawale-411033</p>
               </div>
             </div>
           </div>

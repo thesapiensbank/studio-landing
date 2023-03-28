@@ -33,7 +33,7 @@ const Services = () => {
     ) {
       const requestData = {
         HTMLContent: `<p>From : ${formInput?.name} Email: ${formInput?.email}</p><p>Service requested : ${formInput?.service}</p> <p>Quality : ${formInput?.quality}</p> <p>Iterations : ${formInput?.iterations}</p> <p>Message : ${formInput?.message}</p>`,
-        recipient: "hello@supersapiens.in",
+        recipient: "studio.supersapiens@gmail.com",
         subject: "Supersapiens Studio Service Request",
       };
       axios
