@@ -553,9 +553,8 @@ const Portfolio = () => {
                         >
                           <p className="relative text-white">
                             {" "}
-                            Environmental concept de
+                            Environmental concept design
                           </p>
-                          sign
                         </button>
                       )}
                     </Tab>
