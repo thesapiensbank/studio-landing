@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="2xl:px-14 2xl:py-24 xl:px-10 xl:py-28 lg:px-8 lg:py-28 h-max lg:flex lg:flex-col space-y-10 ">
           <Link href="/">
             <Image
+              priority
               className="w-full h-auto hover:scale-105 transition-all duration-200"
               src={logo}
               alt=""
@@ -49,7 +50,7 @@ const Navbar = () => {
                 className=" bg-[#7A7A78] hover:bg-primary p-1.5 rounded-full"
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.behance.net/supersastudio" target="_blank">
               <IconBrandBehance
                 size={46}
                 className=" bg-[#7A7A78] hover:bg-primary p-2 rounded-full"
@@ -63,7 +64,7 @@ const Navbar = () => {
         >
           <div className="absolute bottom-0 w-full">
             <div className="w-full h-max relative mt-5  cursor-pointer group glowButtontext">
-              <Image className="w-full h-auto " src={button} alt="" />
+              <Image priority className="w-full h-auto " src={button} alt="" />
               <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:text-lg lg:text-lg transition-all delay-200 w-full h-full flex justify-center items-center font-primary">
                 Book a Meeting
               </p>

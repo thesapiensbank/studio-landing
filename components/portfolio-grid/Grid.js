@@ -10,6 +10,7 @@ const Grid = ({ images }) => {
             {images?.image1 && (
               <div className="lg:h-[552px] md:h-[332px] h-[192px] w-1/2 md:rounded-xl rounded-lg flex justify-center">
                 <Image
+                  priority
                   src={images?.image1}
                   className="object-cover h-full w-full md:rounded-xl rounded-lg"
                   alt=""
@@ -20,6 +21,7 @@ const Grid = ({ images }) => {
               {images?.image2 && (
                 <div className="lg:h-[268px] md:h-[161px] h-[94px] w-full md:rounded-xl rounded-lg">
                   <Image
+                    priority
                     src={images?.image2}
                     className="object-cover h-full w-full md:rounded-xl rounded-lg"
                     alt=""
@@ -29,6 +31,7 @@ const Grid = ({ images }) => {
               {images?.image3 && (
                 <div className="lg:h-[268px] h-[94px] md:h-[161px] w-full md:rounded-xl rounded-lg">
                   <Image
+                    priority
                     src={images?.image3}
                     className="object-cover h-full w-full md:rounded-xl rounded-lg"
                     alt=""
