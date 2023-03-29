@@ -144,83 +144,109 @@
 }
 
 .illustrations-tab-bg {
+  position: relative;
   background: url("../public/assets/portfolio/illustrationss/IMG_0774.jpg");
   background-size: cover;
+}
+
+.after:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
 }
 
 .character-tab-bg {
   background: url("../public/assets/portfolio/characterdesign/IMG_6082.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .concept-tab-bg {
   background: url("../public/assets/portfolio/conceptart/IMG_5944.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .visual-tab-bg {
   background: url("../public/assets/portfolio/visualdevelopment/IMG_0751.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .fantasy-tab-bg {
   background: url("../public/assets/portfolio/fantasyart/IMG_5952.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .book-tab-bg {
   background: url("../public/assets/portfolio/bookillustrations/IMG_9741.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .cover-tab-bg {
   background: url("../public/assets/portfolio/coverart/4.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .children-tab-bg {
   background: url("../public/assets/portfolio/childrenart/IMG_0760.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .environment-tab-bg {
   background: url("../public/assets/portfolio/environmentaldesign/IMG_5397.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .game-tab-bg {
   background: url("../public/assets/portfolio/gameart/IMG_0748.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .graphics-tab-bg {
   background: url("../public/assets/portfolio/graphicdesign/IMG_3772.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .storyboard-tab-bg {
   background: url("../public/assets/portfolio/bookillustrations/IMG_9741.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .unreal-tab-bg {
   background: url("../public/assets/portfolio/childrenart/IMG_0760.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .animation-tab-bg {
   background: url("../public/assets/portfolio/visualdevelopment/IMG_0751.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .voiceover-tab-bg {
   background: url("../public/assets/portfolio/illustrationss/IMG_0774.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .ui-tab-bg {
   background: url("../public/assets/portfolio/characterdesign/IMG_6082.jpg");
   background-size: cover;
+   position: relative;
 }
 
 .vector_button{

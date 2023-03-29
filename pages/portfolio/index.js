@@ -424,10 +424,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "illustrations-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "illustrations-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Illustrations
+                          <p className="relative text-white">Illustrations</p>
                         </button>
                       )}
                     </Tab>
@@ -438,10 +438,13 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "character-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "character-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Character design
+                          <p className="relative text-white">
+                            {" "}
+                            Character design
+                          </p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -452,10 +455,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "concept-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "concept-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Concept Art
+                          <p className="relative text-white"> Concept Art</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -466,10 +469,13 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "visual-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "visual-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Visual development
+                          <p className="relative text-white">
+                            {" "}
+                            Visual development
+                          </p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -480,10 +486,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "fantasy-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "fantasy-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Fantasy art
+                          <p className="relative text-white"> Fantasy art</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -494,10 +500,13 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "book-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "book-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Book illustration
+                          <p className="relative text-white">
+                            {" "}
+                            Book illustration
+                          </p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -508,10 +517,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "cover-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "cover-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Cover art
+                          <p className="relative text-white"> Cover art</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -522,10 +531,13 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "children-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "children-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Children&apos;s art
+                          <p className="relative text-white">
+                            {" "}
+                            Children&apos;s art
+                          </p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -536,10 +548,14 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "environment-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "environment-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Environmental concept design
+                          <p className="relative text-white">
+                            {" "}
+                            Environmental concept de
+                          </p>
+                          sign
                         </button>
                       )}
                     </Tab>
@@ -550,10 +566,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "game-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "game-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Game art
+                          <p className="relative text-white"> Game art</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -564,10 +580,13 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "graphics-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "graphics-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Graphics design
+                          <p className="relative text-white">
+                            {" "}
+                            Graphics design
+                          </p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -578,10 +597,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "storyboard-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "storyboard-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Storyboard
+                          <p className="relative text-white"> Storyboard</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -592,10 +611,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "unreal-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "unreal-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Unreal engine
+                          <p className="relative text-white"> Unreal engine</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -606,10 +625,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "animation-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "animation-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          2d animation
+                          <p className="relative text-white"> 2d animation</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -620,10 +639,10 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "voiceover-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "voiceover-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          Voice over
+                          <p className="relative text-white"> Voice over</p>{" "}
                         </button>
                       )}
                     </Tab>
@@ -634,10 +653,13 @@ const Portfolio = () => {
                           className={
                             selected
                               ? "bg-primary text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
-                              : "ui-tab-bg text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
+                              : "ui-tab-bg after text-white md:h-10 h-9 w-max md:px-4 px-3 rounded-lg md:text-base text-sm"
                           }
                         >
-                          User interface design
+                          <p className="relative text-white">
+                            {" "}
+                            User interface design
+                          </p>{" "}
                         </button>
                       )}
                     </Tab>
