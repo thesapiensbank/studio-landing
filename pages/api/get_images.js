@@ -5,16 +5,15 @@ export default async function handler(req, res) {
   if (req.method === "GET") {
     try {
       await connectDB();
-      const { imageId } = req.query;
-      const data = await Upload.find({ category: imageId });
+      const data = await Upload.find();
       return res.json({
         status: "Fetch successully",
-        message: data,
+        data: data,
       });
     } catch (error) {
       return res.json({
         status: "error",
-        message: error,
+        data: error,
       });
     }
   } else {

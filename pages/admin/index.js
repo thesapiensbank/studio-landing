@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import Select from "react-select";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toast";
+import { uploadFile } from "@/libs/uploadToIPFS";
+import { ClipLoader } from "react-spinners";
 
 const Admin = () => {
   const options = [
     { value: "book-illustration", label: "book-illustration" },
     { value: "character-design", label: "character-design" },
     { value: "children-art", label: "children-art" },
+    { value: "concept-art", label: "concept-art" },
     { value: "cover-art", label: "cover-art" },
     { value: "environmental-design", label: "environmental-design" },
     { value: "fantasy-art", label: "fantasy-art" },
@@ -44,9 +47,11 @@ const Admin = () => {
     category: null,
   });
 
+  const [uploading, setUploading] = useState(false);
+
   const handleImage = (e) => {
     const file = e.target.files[0];
-    console.log(file);
+
     setFormData({
       ...formData,
       file: file,
@@ -55,24 +60,37 @@ const Admin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const form = new FormData();
-    console.log(formData);
-    form.append("title", formData?.title);
-    form.append("description", formData?.description);
-    form.append("priority", formData?.priority);
-    form.append("category", formData?.category);
-    form.append("image", formData?.file);
-    axios
-      .post("/api/upload", form, {
-        headers: {
-          Accept: "*/*",
-        },
-      })
-      .then((res) => {
-        toast.success("Image Uploaded Successfully !");
+    setUploading(true);
+    uploadFile(formData?.file)
+      .then((cid) => {
+        if (cid) {
+          const imageBaseUrl = `https://ipfs.io/ipfs/${cid}/`;
+          const data = {
+            title: formData.title,
+            description: formData.description,
+            category: formData.category,
+            priority: formData.priority,
+            file: imageBaseUrl + formData.file.name,
+          };
+          axios
+            .post("/api/upload", data, {
+              headers: {
+                Accept: "*/*",
+              },
+            })
+            .then((res) => {
+              toast.success("Image Uploaded Successfully !");
+              setUploading(false);
+            })
+            .catch((err) => {
+              toast.error("Oops! Something went wrong");
+              setUploading(false);
+            });
+        }
       })
       .catch((err) => {
-        toast.error("Oops! Something went wrong");
+        console.log(err);
+        setUploading(false);
       });
   };
 
@@ -149,7 +167,7 @@ const Admin = () => {
             onClick={handleSubmit}
             className="py-2 bg-primary text-white rounded"
           >
-            Upload
+            {uploading ? <ClipLoader color="#fff" size={16} /> : "Upload"}
           </button>
         </div>
       </div>

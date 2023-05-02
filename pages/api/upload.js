@@ -4,50 +4,18 @@ import Upload from "@/models/upload";
  * @param {import("next").NextApiRequest} req
  * @param {import("next").NextApiResponse} res
  */
-import multer from "multer";
-import nc from "next-connect";
-import path from "path";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
-const upload = multer({
-  storage: multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, path.join(process.cwd(), "public", "uploads"));
-    },
-    filename: function (req, file, cb) {
-      cb(null, new Date().getTime() + "-" + file.originalname);
-    },
-  }),
-});
-
-// {
-//   onError: (err, req, res, next) => {
-//     console.error(err.stack);
-//     res.status(500).end("something broke");
-//   },
-//   onNoMatch: (req, res, next) => {
-//     res.status(500).end("page not found");
-//   },
-// }
-
-const handler = nc()
-  .use(upload.single("image"))
-  .post(async (req, res) => {
+export default async function handler(req, res) {
+  if (req.method === "POST") {
     try {
       await connectDB();
-      const { title, description, priority, category } = req.body;
-      const file = req.file;
+      const { title, description, priority, category, file } = req.body;
       const upload = await new Upload();
       upload.title = title;
       upload.description = description;
       upload.priority = priority;
       upload.category = category;
-      upload.file = process.env.STATIC_RESOURCE_URL + "/" + file.filename;
+      upload.file = file;
       upload.createdAt = new Date();
       console.log(upload);
       await upload.save();
@@ -56,11 +24,15 @@ const handler = nc()
         data: upload,
       });
     } catch (err) {
-      return res.json({
+      return res.status(400).json({
         status: "error",
         error: err,
       });
     }
-  });
-
-export default handler;
+  } else {
+    return res.json({
+      status: "error",
+      message: "Invalid Request Method",
+    });
+  }
+}
