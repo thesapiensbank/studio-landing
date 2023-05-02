@@ -3,7 +3,7 @@ import Select from "react-select";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toast";
 
-const index = () => {
+const Admin = () => {
   const options = [
     { value: "book-illustration", label: "book-illustration" },
     { value: "character-design", label: "character-design" },
@@ -158,4 +158,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Admin;
