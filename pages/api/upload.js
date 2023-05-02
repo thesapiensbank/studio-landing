@@ -25,15 +25,17 @@ const upload = multer({
   }),
 });
 
-const handler = nc({
-  onError: (err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).end("something broke");
-  },
-  onNoMatch: (req, res, next) => {
-    res.status(500).end("page not found");
-  },
-})
+// {
+//   onError: (err, req, res, next) => {
+//     console.error(err.stack);
+//     res.status(500).end("something broke");
+//   },
+//   onNoMatch: (req, res, next) => {
+//     res.status(500).end("page not found");
+//   },
+// }
+
+const handler = nc()
   .use(upload.single("image"))
   .post(async (req, res) => {
     try {
