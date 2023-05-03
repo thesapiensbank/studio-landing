@@ -1,5 +1,5 @@
 import { Web3Storage } from "web3.storage";
-import Compressor from "compressorjs";
+// import Compressor from "compressorjs";
 
 export function makeStorageClient() {
   return new Web3Storage({
@@ -9,15 +9,15 @@ export function makeStorageClient() {
 }
 
 export async function uploadFile(files) {
-  const compressedFile = await new Promise((resolve) => {
-    new Compressor(files, {
-      quality: 0.6,
-      success: (result) => {
-        resolve(result);
-      },
-    });
-  });
+  // const compressedFile = await new Promise((resolve) => {
+  //   new Compressor(files, {
+  //     quality: 0.6,
+  //     success: (result) => {
+  //       resolve(result);
+  //     },
+  //   });
+  // });
   const client = makeStorageClient();
-  const cid = await client.put([compressedFile]);
+  const cid = await client.put([files]);
   return cid;
 }

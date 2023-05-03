@@ -1,5 +1,4 @@
 import connectDB from "@/libs/connectDB";
-import makeId from "@/libs/makeId";
 import Upload from "@/models/upload";
 /**
  * @param {import("next").NextApiRequest} req
@@ -10,21 +9,19 @@ export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
       await connectDB();
-      const { title, description, priority, category, file, type } = req.body;
-      const upload = await new Upload();
-      upload.title = title;
-      upload.description = description;
-      upload.priority = priority;
-      upload.category = category;
-      upload.file = file;
-      upload.type = type;
-      upload.image_id = makeId(7);
-      upload.createdAt = new Date();
-      console.log(upload);
-      await upload.save();
+      const { title, description, priority, category, file, type, image_id } =
+        req.body;
+      const image = await Upload.findOne({ image_id: image_id });
+      image.title = title;
+      image.description = description;
+      image.priority = priority;
+      image.category = category;
+      image.file = file;
+      image.type = type;
+      await image.save();
       return res.status(200).json({
-        status: "upload successful",
-        data: upload,
+        status: "Image Update successful",
+        data: image,
       });
     } catch (err) {
       return res.status(400).json({

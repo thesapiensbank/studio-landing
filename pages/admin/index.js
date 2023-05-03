@@ -4,6 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toast";
 import { uploadFile } from "@/libs/uploadToIPFS";
 import { ClipLoader } from "react-spinners";
+import Head from "next/head";
 
 const Admin = () => {
   const options = [
@@ -24,6 +25,7 @@ const Admin = () => {
   const priorityOptions = [
     { value: "0", label: "0" },
     { value: "1", label: "1" },
+    { value: "2", label: "2" },
     { value: "3", label: "3" },
     { value: "4", label: "4" },
     { value: "5", label: "5" },
@@ -39,12 +41,18 @@ const Admin = () => {
     { value: "15", label: "15" },
   ];
 
+  const typeOptions = [
+    { value: "image", label: "image | gif" },
+    { value: "video", label: "video" },
+  ];
+
   const [formData, setFormData] = useState({
     file: null,
     title: null,
     description: null,
     priority: null,
     category: null,
+    type: null,
   });
 
   const [uploading, setUploading] = useState(false);
@@ -71,6 +79,7 @@ const Admin = () => {
             category: formData.category,
             priority: formData.priority,
             file: imageBaseUrl + formData.file.name,
+            type: formData.type,
           };
           axios
             .post("/api/upload", data, {
@@ -89,7 +98,7 @@ const Admin = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        toast.error("Error while uploading to IPFS");
         setUploading(false);
       });
   };
@@ -105,40 +114,63 @@ const Admin = () => {
 
   return (
     <>
-      <div className="bg-white h-screen w-full flex flex-col justify-center items-center space-y-20">
+      <Head>
+        <title>Supersapiens Studio | Admin</title>
+        <meta
+          name="Supersapiens Studio"
+          content="Proud Design Studio Since 2022"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
+      <div className="bg-white h-screen w-full flex flex-col justify-center items-center space-y-20 p-5 md:p-0">
         <div className="text-3xl">Upload Image</div>
-        <div className="w-1/3 flex flex-col space-y-5 ">
-          <div className="flex space-x-5 w-full items-center">
+        <div className="2xl:w-1/3 xl:w-2/5 flex flex-col space-y-5 ">
+          <div className="flex space-x-5 w-full items-center justify-between">
             <p>File</p>
             <input
               type="file"
               name="file"
               accept="image/*, video/*"
-              className=""
+              className="md:w-96 w-full"
               onChange={handleImage}
             />
           </div>
-          <div className="flex space-x-5 w-full items-center">
+          <div className="flex space-x-5 w-full items-center justify-between">
+            <p>Type</p>
+            <Select
+              className="md:w-96 w-full"
+              name="type"
+              onChange={(e) => {
+                setFormData({
+                  ...formData,
+                  type: e.value,
+                });
+              }}
+              options={typeOptions}
+            />
+          </div>
+          <div className="flex space-x-5 w-full items-center justify-between">
             <p>Title</p>
             <input
               type="text"
               name="title"
-              className="h-9 w-full border border-gray-400 rounded focus:outline-none p-2 text-sm"
+              className="h-9 md:w-96 w-full border border-gray-400 rounded focus:outline-none p-2 text-sm"
               onChange={handleChange}
             />
           </div>
-          <div className="flex space-x-5 w-full items-center">
+          <div className="flex space-x-5 w-full items-center justify-between">
             <p>Description</p>
             <textarea
               name="description"
-              className="h-20 w-full border border-gray-400 rounded focus:outline-none p-3 text-sm"
+              className="h-20 md:w-96 w-full border border-gray-400 rounded focus:outline-none p-3 text-sm"
               onChange={handleChange}
             />
           </div>
-          <div className="flex space-x-5 w-full items-center">
+          <div className="flex space-x-5 w-full items-center justify-between">
             <p>Priority</p>
             <Select
-              className="w-full"
+              className="md:w-96 w-full"
               name="priority"
               onChange={(e) => {
                 setFormData({
@@ -149,10 +181,10 @@ const Admin = () => {
               options={priorityOptions}
             />
           </div>
-          <div className="flex space-x-5 w-full items-center">
+          <div className="flex space-x-5 w-full items-center justify-between">
             <p>Category</p>
             <Select
-              className="w-full"
+              className="md:w-96 w-full"
               name="category"
               onChange={(e) => {
                 setFormData({
