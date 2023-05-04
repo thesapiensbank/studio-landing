@@ -3,10 +3,12 @@ import Head from "next/head";
 import Select from "react-select";
 import Image from "next/image";
 import axios from "axios";
-import { IconEdit } from "@tabler/icons-react";
+import { IconArrowNarrowLeft, IconEdit } from "@tabler/icons-react";
 import { IconTrash } from "@tabler/icons-react";
 import MyModal from "@/components/modal/Modal";
 import ConfirmationModal from "@/components/modal/ConfirmationModal";
+import Router from "next/router";
+import Link from "next/link";
 
 const Update = () => {
   const options = [
@@ -35,6 +37,18 @@ const Update = () => {
   const [modalData, setModalData] = useState(null);
 
   const [deleteModalData, setDeleteModalData] = useState(null);
+
+  useEffect(() => {
+    if (window) {
+      const isAdminLoggenIn =
+        window?.sessionStorage?.getItem("isAdminLoggenIn");
+      if (!isAdminLoggenIn) {
+        Router.push({
+          pathname: "/admin",
+        });
+      }
+    }
+  }, []);
 
   function closeModal() {
     setIsOpen(false);
@@ -100,6 +114,12 @@ const Update = () => {
             }}
             options={options}
           />
+        </div>
+        <div className="text-sm self-center hover:underline">
+          <Link href="/admin/upload" className="flex space-x-2">
+            <IconArrowNarrowLeft size={20} />
+            <p>Upload a new file</p>
+          </Link>
         </div>
         <table className="table text-black border-separate space-y-6 text-sm w-full">
           <thead className="bg-slate-100 text-black">
