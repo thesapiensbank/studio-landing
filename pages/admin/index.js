@@ -77,7 +77,7 @@ const Admin = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <div className="bg-white h-screen w-full flex flex-col justify-center items-center space-y-20 p-5 md:p-0">
+      <div className="bg-white h-screen w-full flex flex-col justify-center items-center space-y-14 p-5 md:p-0">
         <div className="text-3xl">Admin Login</div>
         <div className="2xl:w-1/3 xl:w-2/5 flex flex-col space-y-5 ">
           <div className="flex space-x-5 w-full items-center justify-between">
