@@ -6,9 +6,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toast";
-// import Skeleton from "react-loading-skeleton";
-// import "react-loading-skeleton/dist/skeleton.css";
-import abc from "../../public/assets/brand-logo/intro-logo.svg";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const Details = () => {
   const router = useRouter();
@@ -52,29 +51,27 @@ const Details = () => {
           <MobileNavbar />
         </div>
         <div className="lg:w-4/5 h-max bg-black lg:ml-auto 2xl:mb-5 lg:mb-4 p-5 text-white font-primary">
-          <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-[320px] w-full aspect-video relative ">
-            <div className=" h-full w-full md:rounded-xl rounded-lg flex justify-center">
+          <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-max w-full aspect-video relative ">
+            <div className=" md:h-full h-max w-full md:rounded-xl rounded-lg">
               {detailedData?.file ? (
                 <Image
                   priority
                   height={1200}
                   width={1200}
-                  className="h-full w-auto object-scale-down md:rounded-xl rounded-lg"
+                  className="md:h-full h-max w-auto object-scale-down md:rounded-xl rounded-lg block m-auto"
                   src={detailedData?.file}
                   alt=""
                 />
               ) : (
-                <Image
-                  priority
-                  height={100}
-                  width={100}
-                  className="h-full w-auto object-scale-down md:rounded-xl rounded-lg"
-                  src={abc}
-                  alt=""
+                <Skeleton
+                  highlightColor="#E7881A"
+                  height="100%"
+                  enableAnimation
                 />
               )}
             </div>
           </div>
+
           <div className="w-full flex flex-col md:space-y-10 space-y-4 md:my-10 my-4">
             <p className="md:text-5xl text-4xl font-semibold">
               {detailedData?.title}
