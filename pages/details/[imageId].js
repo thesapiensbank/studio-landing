@@ -51,12 +51,12 @@ const Details = () => {
           </div>
           <div className="lg:w-4/5 h-max bg-black lg:ml-auto 2xl:mb-5 lg:mb-4 px-5 text-white font-primary">
             <div className="h-full w-full  aspect-video relative ">
-              <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-full w-full md:rounded-xl rounded-lg">
+              <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-full w-full md:rounded-xl rounded-lg flex justify-center">
                 <Image
                   priority
                   height={1200}
                   width={1200}
-                  className="h-full w-full object-cover md:rounded-xl rounded-lg"
+                  className="h-full w-auto object-scale-down md:rounded-xl rounded-lg"
                   src={detailedData.file}
                   alt=""
                 />

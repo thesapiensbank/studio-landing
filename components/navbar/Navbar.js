@@ -4,8 +4,10 @@ import Image from "next/image";
 import button from "../../public/assets/components/button.svg";
 import Link from "next/link";
 import { IconBrandInstagram, IconBrandBehance } from "@tabler/icons-react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <div className="lg:h-screen lg:w-1/5 bg-black fixed border border-[#1E1E1E] font-tertiary ">
       <div className="lg:flex lg:flex-col h-full relative">
@@ -20,22 +22,46 @@ const Navbar = () => {
           </Link>
           <ul className="lg:flex lg:flex-col  w-full space-y-5 text-white">
             <Link href="/portfolio">
-              <li className="hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer">
+              <li
+                className={`${
+                  router?.pathname == "/portfolio"
+                    ? "w-full text-center py-2 text-lg rounded-lg cursor-pointer bg-primary"
+                    : "hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer"
+                }`}
+              >
                 Portfolio
               </li>
             </Link>
             <Link href="/services">
-              <li className="hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer">
+              <li
+                className={`${
+                  router?.pathname == "/services"
+                    ? "w-full text-center py-2 text-lg rounded-lg cursor-pointer bg-primary"
+                    : "hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer"
+                }`}
+              >
                 Services
               </li>
             </Link>
             <Link href="/about">
-              <li className="hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer">
+              <li
+                className={`${
+                  router?.pathname == "/about"
+                    ? "w-full text-center py-2 text-lg rounded-lg cursor-pointer bg-primary"
+                    : "hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer"
+                }`}
+              >
                 About
               </li>
             </Link>
             <Link href="/contact">
-              <li className="hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer">
+              <li
+                className={`${
+                  router?.pathname == "/contact"
+                    ? "w-full text-center py-2 text-lg rounded-lg cursor-pointer bg-primary"
+                    : "hover:bg-[#FFFFFF1A] w-full text-center py-2 text-lg rounded-lg cursor-pointer"
+                }`}
+              >
                 Contact Us
               </li>
             </Link>
