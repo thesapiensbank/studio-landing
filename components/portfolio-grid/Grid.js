@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import axios from "axios";
 import Link from "next/link";
+// import Skeleton from "react-loading-skeleton";
+// import "react-loading-skeleton/dist/skeleton.css";
 
 const Grid = ({ category }) => {
   const [images, setImages] = useState([]);
@@ -16,6 +18,10 @@ const Grid = ({ category }) => {
       .catch((err) => {
         console.log(err);
       });
+  };
+
+  const myLoader = ({ src, width, quality }) => {
+    return `${src}?w=${width}&q=${quality || 75}`;
   };
 
   useEffect(() => {
@@ -34,6 +40,7 @@ const Grid = ({ category }) => {
                 >
                   <Image
                     priority
+                    loader={myLoader}
                     height={400}
                     width={400}
                     src={images[0]?.file}
@@ -161,6 +168,7 @@ const Grid = ({ category }) => {
                   >
                     <Image
                       priority
+                      loader={myLoader}
                       height={400}
                       width={400}
                       src={images[5]?.file}
@@ -201,6 +209,7 @@ const Grid = ({ category }) => {
                   >
                     <Image
                       priority
+                      loader={myLoader}
                       height={400}
                       width={400}
                       src={images[6]?.file}
@@ -229,6 +238,7 @@ const Grid = ({ category }) => {
                     {images[7]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[7]?.file}
@@ -251,6 +261,7 @@ const Grid = ({ category }) => {
                     {images[8]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[8]?.file}
@@ -281,6 +292,7 @@ const Grid = ({ category }) => {
                     {images[9]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[9]?.file}
@@ -303,6 +315,7 @@ const Grid = ({ category }) => {
                     {images[10]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[10]?.file}
@@ -329,6 +342,7 @@ const Grid = ({ category }) => {
                   >
                     <Image
                       priority
+                      loader={myLoader}
                       height={400}
                       width={400}
                       src={images[11]?.file}
@@ -365,6 +379,7 @@ const Grid = ({ category }) => {
                   >
                     <Image
                       priority
+                      loader={myLoader}
                       height={400}
                       width={400}
                       src={images[12]?.file}
@@ -393,6 +408,7 @@ const Grid = ({ category }) => {
                     {images[13]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[13]?.file}
@@ -415,6 +431,7 @@ const Grid = ({ category }) => {
                     {images[14]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[14]?.file}
@@ -445,6 +462,7 @@ const Grid = ({ category }) => {
                     {images[15]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[15]?.file}
@@ -467,6 +485,7 @@ const Grid = ({ category }) => {
                     {images[16]?.type == "image" ? (
                       <Image
                         priority
+                        loader={myLoader}
                         height={400}
                         width={400}
                         src={images[16]?.file}
@@ -493,6 +512,7 @@ const Grid = ({ category }) => {
                   >
                     <Image
                       priority
+                      loader={myLoader}
                       height={400}
                       width={400}
                       src={images[17]?.file}
