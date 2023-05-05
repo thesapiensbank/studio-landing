@@ -78,7 +78,7 @@ const Update = () => {
 
   const fetchData = async () => {
     await axios
-      .get(`/api/get_image_by_id/${category}`)
+      .get(`/api/get_images_by_category/${category}`)
       .then((response) => {
         const res = response.data.data;
         setData(res);
@@ -159,9 +159,11 @@ const Update = () => {
                           <div className="text-ellipsis">
                             {value.title.slice(0, 10)}
                           </div>
-                          <div className="text-black text-ellipsis">
-                            {value.description.slice(0, 10)}
-                          </div>
+                          {value?.description && (
+                            <div className="text-black text-ellipsis">
+                              {value.description.slice(0, 10)}...
+                            </div>
+                          )}
                         </div>
                       </div>
                     </td>

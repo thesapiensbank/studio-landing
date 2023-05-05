@@ -20,7 +20,6 @@ const uploadSchema = Schema({
   },
   description: {
     type: String,
-    required: true,
   },
   priority: {
     type: String,

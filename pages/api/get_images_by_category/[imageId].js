@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     try {
       await connectDB();
       const { imageId } = req.query;
-      const data = await Upload.find({ image_id: imageId });
+      const data = await Upload.find({ category: imageId });
       return res.json({
         status: "Fetch successully",
         data: data,
