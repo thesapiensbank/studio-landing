@@ -6,8 +6,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toast";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+// import Skeleton from "react-loading-skeleton";
+// import "react-loading-skeleton/dist/skeleton.css";
+import placeholder from "../../public/assets/imgs/placeholder.gif";
 
 const Details = () => {
   const router = useRouter();
@@ -63,10 +64,13 @@ const Details = () => {
                   alt=""
                 />
               ) : (
-                <Skeleton
-                  highlightColor="#E7881A"
-                  height="100%"
-                  enableAnimation
+                <Image
+                  priority
+                  height={200}
+                  width={200}
+                  className="md:h-full h-max w-auto object-scale-down md:rounded-xl rounded-lg block m-auto"
+                  src={placeholder}
+                  alt=""
                 />
               )}
             </div>
