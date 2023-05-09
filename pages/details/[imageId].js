@@ -9,6 +9,8 @@ import { ToastContainer, toast } from "react-toast";
 // import Skeleton from "react-loading-skeleton";
 // import "react-loading-skeleton/dist/skeleton.css";
 import placeholder from "../../public/assets/imgs/placeholder.gif";
+import animation from "../../public/assets/animations/detail-loading.json";
+import Lottie from "lottie-react";
 
 const Details = () => {
   const router = useRouter();
@@ -64,13 +66,10 @@ const Details = () => {
                   alt=""
                 />
               ) : (
-                <Image
-                  priority
-                  height={200}
-                  width={200}
-                  className="md:h-full h-max w-auto object-scale-down md:rounded-xl rounded-lg block m-auto"
-                  src={placeholder}
-                  alt=""
+                <Lottie
+                  animationData={animation}
+                  loop={true}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 />
               )}
             </div>
