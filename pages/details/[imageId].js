@@ -57,19 +57,29 @@ const Details = () => {
           <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-max w-full aspect-video relative ">
             <div className=" md:h-full h-max w-full md:rounded-xl rounded-lg">
               {detailedData?.file ? (
-                <Image
-                  priority
-                  height={1200}
-                  width={1200}
-                  className="md:h-full h-max w-auto object-scale-down md:rounded-xl rounded-lg block m-auto"
-                  src={detailedData?.file}
-                  alt=""
-                />
+                <>
+                  {detailedData.type == "image" ? (
+                    <Image
+                      priority
+                      height={1200}
+                      width={1200}
+                      className="md:h-full h-max w-auto object-scale-down md:rounded-xl rounded-lg block m-auto"
+                      src={detailedData?.file}
+                      alt=""
+                    />
+                  ) : (
+                    <video
+                      src={detailedData?.file}
+                      controls="true"
+                      className="md:h-full h-max w-auto object-scale-down md:rounded-xl rounded-lg block m-auto"
+                    ></video>
+                  )}
+                </>
               ) : (
                 <Lottie
                   animationData={animation}
                   loop={true}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
                 />
               )}
             </div>
