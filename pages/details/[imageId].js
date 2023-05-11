@@ -6,11 +6,10 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toast";
-// import Skeleton from "react-loading-skeleton";
-// import "react-loading-skeleton/dist/skeleton.css";
-import placeholder from "../../public/assets/imgs/placeholder.gif";
 import animation from "../../public/assets/animations/detail-loading.json";
 import Lottie from "lottie-react";
+import { IconArrowNarrowLeft } from "@tabler/icons-react";
+import Link from "next/link";
 
 const Details = () => {
   const router = useRouter();
@@ -54,7 +53,14 @@ const Details = () => {
           <MobileNavbar />
         </div>
         <div className="lg:w-4/5 h-max bg-black lg:ml-auto 2xl:mb-5 lg:mb-4 p-5 text-white font-primary">
-          <div className="2xl:h-[690px] lg:h-[670px] md:h-[600px] h-max w-full aspect-video relative ">
+          <div className=" mb-2 w-max">
+            <Link href="/portfolio" className="flex items-center space-x-2">
+              <IconArrowNarrowLeft color="#E7881A" />
+              <p className="text-xl">Back</p>
+            </Link>
+          </div>
+
+          <div className="lg:h-[660px] md:h-[600px] h-max w-full aspect-video relative ">
             <div className=" md:h-full h-max w-full md:rounded-xl rounded-lg">
               {detailedData?.file ? (
                 <>

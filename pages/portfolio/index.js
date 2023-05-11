@@ -371,6 +371,8 @@ import Head from "next/head";
 const Portfolio = () => {
   const ref = useRef(null);
 
+  const [tab, setTab] = useState(null);
+
   const handleScrollLeft = () => {
     if (window) {
       ref.current.scrollBy({
@@ -387,6 +389,17 @@ const Portfolio = () => {
       });
     }
   };
+
+  useEffect(() => {
+    if (window) {
+      console.log(parseInt(window?.sessionStorage?.getItem("tab")) > 0);
+      const selected =
+        parseInt(window?.sessionStorage?.getItem("tab")) > 0
+          ? parseInt(window?.sessionStorage?.getItem("tab"))
+          : 0;
+      setTab(selected);
+    }
+  }, []);
 
   // const [bookIllustrations, setBookIllustrations] = useState([]);
 
@@ -452,7 +465,13 @@ const Portfolio = () => {
         </div>
         <div className="lg:w-4/5 h-max bg-black lg:ml-auto text-white py-4 font-primary">
           <div className="flex flex-col justify-center w-full">
-            <Tab.Group>
+            <Tab.Group
+              onChange={(index) => {
+                window.sessionStorage.setItem("tab", index);
+                setTab(index);
+              }}
+              selectedIndex={tab > 0 ? tab : 0}
+            >
               <div className="w-full flex items-center justify-between md:space-x-3 space-x-2 lg:px-11 md:px-5 px-4">
                 <button
                   className="hover:text-primary md:mt-2.5 mt-1.5"
@@ -467,7 +486,6 @@ const Portfolio = () => {
                   <Tab.List className="flex justify-center items-end md:space-x-2 space-x-1 px-auto w-max  md:space-y-2 space-y-1">
                     <Tab as={Fragment}>
                       {({ selected }) => (
-                        /* Use the `selected` state to conditionally style the selected tab. */
                         <button
                           className={
                             selected
